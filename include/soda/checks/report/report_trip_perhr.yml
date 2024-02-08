@@ -1,0 +1,6 @@
+checks for report_trip_perhr:
+    - missing_count(pickup_hour) = 0:
+        name: All pickup hours are accounted for
+    - min(trips_per_hour):
+        fail: when <= 0
+        name: At least one trip per hour

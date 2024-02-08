@@ -1,0 +1,11 @@
+checks for dim_locaiton:
+  - schema:
+      fail:
+        when required column missing:
+          - locationindex_id
+          - PUlocationCode
+          - DOlocationCode
+        when wrong column type:
+          locationindex_id: INT64
+          PUlocationCode: INT64
+          DOlocationCode: INT64

@@ -1,0 +1,11 @@
+checks for dim_vendor:
+  - schema:
+      fail:
+        when required column missing:
+          - vendorindex_id
+          - vendor_id
+          - vendor_type
+        when wrong column type:
+          vendorindex_id: INT64
+          vendor_id: INT64
+          vendor_type: STRING

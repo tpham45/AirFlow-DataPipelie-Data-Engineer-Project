@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "taxi-project-412919",
+  "private_key_id": "b983dd41b802b0bea2bd5f584ed1c0724041e23c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD5O8IZ93rYQWEc\nyA2mDTby/oqVzorcWHD5Tm9lOyvrj3x2V5WSCuUyTY07wcWoeWomr9WzuAmvAnhb\nOA2QyVpm5z0fLHjnP+A182KKSFs75nq+B9KQ6xlitrGbwmTJh80ypUCE3I8DAfiD\nCeMZOKQIRda2JfstrtEGqcuiZsKs+n6W2Fdc+sEQ0k/i0DnE3bMinr5CLtirh/JU\nJ2lcf9YFfZQd14Xvh+ONUrSAflwjsX1hthNWilvDW5GliN6T1M9Yjs1fINNW8mR0\nK7xss6UTKpECvUPKNmmLCLvHN0eHPXbv5Zw/O3y6mL3zwKd/ETnmwFjQIBKdAEE8\nxNQlM8q7AgMBAAECggEAR3KhoLcJAOCxOcKB4yXrqDpfOTXmKeeyr02UcpVFcHiI\nShaumpjD/qkrwUM56iOwUhnbLfOm1wRiw2esv+JxJ4nHxF2H5Wcy29SDXbgDa4cV\njc+JRiEXfGx6Ovg902Y6ZXfpKI1f9BFHEC2v7EWIBJUcycfWm1B/vKTFay+BRHvU\nJhb27ZkKqgeVjKGAM+6bDqz9ei2TEyeDgRWA+mSaPJeh9/Rb/v2ars2CL6pC0S23\nrx/z3D9k9BdIM7Tir02nwvPrnbE5oJ1gBM/qsIZoi3R86OVgJ3ltpwuV/GDGQAsy\niOD/Dd1UMkD7O2bDjFZCC7flSRwJedRWX0vN9Q/ttQKBgQD9c4gFcDOzUyWdmzqY\nIVSuAeBVWpCpzGJfm9gQ38CdltWKRJE+84XsaXoAP2JIyokfWxP6RZkQClEbjfym\niurfzCm6KN8aeb1z3SIoQP5z9PVzqJnSBJ7jiKB/SJ6LdEuGWdMTdf2of8RYum/u\nOBi+4lJg01ZsQjdKH/xYi2QqNQKBgQD7vV5hw66EL0WX9TpPybDc4uF3tQtDY7F6\nDHGuumkiypflxcHrx8AS+Pnq963vq1DPteBZT3gcCB+ZIbDvk1fltznWq3MzbRIo\nTDQwAZaWNHcZzdjlPAdWXb1S7iuUySIgmn5fPfiPXMpONEfR3TblemspY4RjJVNc\n1gw4r1k/LwKBgQDqZaiMbwJBfEozglYkT98CtpWEGqfjgTQRfA3NPUHj/JUstNEn\nSQy4YawFApmg/D7oktDdCvTN0tzEAQKB+8PQif6lPhtnXuOJfh+S3tj04L0H5Auu\nIbvYbokQblbCXiFi9TuyqdKXvOIXtQTDaXnpP2I0Tf+FS4/aq84zDWbraQKBgQDw\nLn0eSdT3ySJdGVvJRGW6Wb1EuTdF1JhAGh9c1f35c9H5J/UdQDfB4kqQJD+Pq6Qu\niRjEHU47cIS1Va+65Jm4UlicuHfxWN86E3q3UsyaAvSfagbGr79QZ596wEJUcpJd\nCQoJVNcR8TYT502erbDywRn9IzXsYnBm4tJGQwajgQKBgFpzmWtcxtUcmhhdajz2\nW26fLu6/z753Mz6Lqhsp0ajztnElRXIoZLCcQtpxBiOPE2ENNSfs7G53Zhi8QIb8\nwMqQiaCUcuSx7Jba+8kl8JJUZ6JmFCe49Vf/fT4x6PiIdSPPH35nr6MMATDvlCuL\n41WFBLXfiCTCFf5FiP+NQq6u\n-----END PRIVATE KEY-----\n",
+  "client_email": "airflow-dataengineer-project@taxi-project-412919.iam.gserviceaccount.com",
+  "client_id": "107710455358601625368",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/airflow-dataengineer-project%40taxi-project-412919.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

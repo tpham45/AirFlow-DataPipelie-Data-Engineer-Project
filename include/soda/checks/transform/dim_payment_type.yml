@@ -1,0 +1,11 @@
+checks for dim_payment_type:
+  - schema:
+      fail:
+        when required column missing:
+          - payment_typeindex_id
+          - payment_type_id
+          - payment_type_name
+        when wrong column type:
+          payment_typeindex_id: INT64
+          payment_type_id: INT64
+          payment_type_name: STRING

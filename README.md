@@ -1,53 +1,61 @@
-<<<<<<< HEAD
-# AirFlow-DataPipelie-Data-Engineer-Project
-=======
-Overview
-========
+# Airflow Data Pipeline - Data Engineer Project
 
-Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
+## Introduction
+This project focuses on creating and automating data pipelines with Airflow as the orchestrator, GCP for data storage, dbt for data transformation, and Soda for data quality checks. It utilizes the Yellow Taxi Data from NYC GOV, adhering to the same ERD diagram for dataset creation in GCP Cloud Storage. The core objective is to demonstrate the setup of a data pipeline, a critical responsibility for data engineers.
 
-Project Contents
-================
+## Architecture Framework
 
-Your Astro project contains the following files and folders:
+![Architecture Framework](https://github.com/tpham45/AirFlow-DataPipelie-Data-Engineer-Project/blob/main/readme%20files/Framework.png)
 
-- dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes two example DAGs:
-    - `example_dag_basic`: This DAG shows a simple ETL data pipeline example with three TaskFlow API tasks that run daily.
-    - `example_dag_advanced`: This advanced DAG showcases a variety of Airflow features like branching, Jinja templates, task groups and several Airflow operators.
-- Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
-- include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
-- packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
-- requirements.txt: Install Python packages needed for your project by adding them to this file. It is empty by default.
-- plugins: Add custom or community plugins for your project to this file. It is empty by default.
-- airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
+## ERD Diagram
 
-Deploy Your Project Locally
-===========================
+![ERD Diagram](https://github.com/tpham45/AirFlow-DataPipelie-Data-Engineer-Project/blob/main/readme%20files/ERD%20Diagram.png)
 
-1. Start Airflow on your local machine by running 'astro dev start'.
 
-This command will spin up 4 Docker containers on your machine, each for a different Airflow component:
+## Technology Stack
+- **Python**: Main programming language for scripting Airflow DAGs.
+- **Docker**: Utilized for packaging and running Airflow in isolated environments.
+- **Airflow**: Orchestration tool for scheduling and monitoring workflows.
+- **GCP Cloud**:
+  - **BigQuery**: Analytical data warehouse for large-scale data querying.
+  - **Cloud Storage**: Blob storage for raw data uploads and intermediate storage.
+- **Soda**: Tool for data quality checks and monitoring.
+- **dbt (data build tool)**: Transformation tool that enables data modeling and creates datasets for analytics.
 
-- Postgres: Airflow's Metadata Database
-- Webserver: The Airflow component responsible for rendering the Airflow UI
-- Scheduler: The Airflow component responsible for monitoring and triggering tasks
-- Triggerer: The Airflow component responsible for triggering deferred tasks
+## Key Dependencies
+- `apache-airflow-providers-google`: Integration of Airflow with GCP.
+- `soda-core-bigquery`: Soda integration for data quality checks in BigQuery.
+- `astronomer-cosmos[dbt-bigquery]`: Astronomer utility for dbt and BigQuery integration.
+- `protobuf`: Serialization library for structured data.
 
-2. Verify that all 4 Docker containers were created by running 'docker ps'.
+## Requirements
+- Install Docker and Airflow: [Setup Guide](#)
+- Create a Soda account: [Soda.io](#)
+- Install Astronomer CLI: [Installation Guide](#)
+- Set up GCP Cloud: [GCP Console](#)
 
-Note: Running 'astro dev start' will start your project with the Airflow Webserver exposed at port 8080 and Postgres exposed at port 5432. If you already have either of those ports allocated, you can either [stop your existing Docker containers or change the port](https://docs.astronomer.io/astro/test-and-troubleshoot-locally#ports-are-not-available).
+## Project Workflow
 
-3. Access the Airflow UI for your local Airflow project. To do so, go to http://localhost:8080/ and log in with 'admin' for both your Username and Password.
+### Step 1: Data Ingestion
+Raw data is placed in the `"dataset"` directory, ready for ingestion into the data pipeline.
 
-You should also be able to access your Postgres Database at 'localhost:5432/postgres'.
+### Step 2: Initialize Pipeline with Airflow
+Set up the Airflow DAG in the `"dags"` directory with the `"taxi_data.py"` script to start processing the workflow.
 
-Deploy Your Project to Astronomer
-=================================
+### Step 3: Data Modeling with dbt
+Configure dbt project settings in the `"dbt"` directory, including `"dbt_project.yml"`, `"packages.yml"`, and `"profiles.yml"`.
 
-If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://docs.astronomer.io/cloud/deploy-code/
+### Step 4: Data Transformation
+Perform data transformations using SQL models located in the `"models"` directory, under subdirectories like `"report"`, `"sources"`, and `"transform"`.
 
-Contact
-=======
+### Step 5: Data Reporting
+Generate reports using SQL models in the `"report"` subdirectory within `"models"`.
 
-The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
->>>>>>> test
+### Step 6: Quality Assurance with Soda
+Run data quality checks defined in the `"soda"` directory to ensure data integrity and accuracy.
+
+### Step 7: Data Deployment
+The transformed and validated data is output in the `"target"` directory within `"dbt"`, ready for use in reporting and analytics.
+
+### Step 8: CI/CD
+Use the `"tests/dags"` directory for testing Airflow DAGs, and the `"Dockerfile"` and `"requirements.txt"` for deployment configurations.

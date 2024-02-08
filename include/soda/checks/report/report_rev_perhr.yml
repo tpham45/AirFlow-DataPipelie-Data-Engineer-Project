@@ -1,0 +1,8 @@
+checks for report_rev_perhr:
+  # Check fails if there are any missing values in the pickup_hour column
+  - missing_count(pickup_hour) = 0:
+      name: All pickup hours are present
+  # Check fails if the revenue per hour is lower than 0
+  - min(revenue_per_hour):
+      fail: when < 0
+      name: Revenue per hour is greater than or equal to 0

@@ -1,0 +1,11 @@
+checks for dim_store_and_fwd_flag:
+  - schema:
+      fail:
+        when required column missing:
+          - store_and_fwd_flag_index_id
+          - store_and_fwd_flag_id
+          - store_and_fwd_flag_type
+        when wrong column type:
+          store_and_fwd_flag_index_id: INT64
+          store_and_fwd_flag_id: STRING
+          store_and_fwd_flag_type: STRING

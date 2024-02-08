@@ -1,0 +1,7 @@
+name: 'taxi_data'
+
+profile: 'taxi_data'
+
+models:
+  taxi_data:
+    materialized: table

@@ -1,0 +1,41 @@
+checks for fact_trip:
+  - schema:
+      fail:
+        when required column missing:
+          - trip_id
+          - vendorindex_id
+          - datetimeindex_id
+          - locationindex_id
+          - ratecodeindex_id
+          - payment_typeindex_id
+          - store_and_fwd_flag_index_id
+          - passenger_count
+          - trip_distance
+          - fare_amount
+          - extra
+          - mta_tax
+          - tip_amount
+          - tolls_amount
+          - improvement_surcharge
+          - congestion_surcharge
+          - Airport_fee
+          - total_amount
+        when wrong column type:
+          trip_id: INT64
+          vendorindex_id: INT64
+          datetimeindex_id: INT64
+          locationindex_id: INT64
+          ratecodeindex_id: INT64
+          payment_typeindex_id: INT64
+          store_and_fwd_flag_index_id: INT64
+          passenger_count: INT64
+          trip_distance: FLOAT64
+          fare_amount: FLOAT64
+          extra: FLOAT64
+          mta_tax: FLOAT64
+          tip_amount: FLOAT64
+          tolls_amount: FLOAT64
+          improvement_surcharge: FLOAT64
+          congestion_surcharge: FLOAT64
+          Airport_fee: FLOAT64
+          total_amount: FLOAT64

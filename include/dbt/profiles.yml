@@ -1,0 +1,12 @@
+taxi_data: 
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method:  service-account
+      keyfile: /usr/local/airflow/include/gcp/airflow_key_gcp_setting.json
+      project: taxi-project-412919
+      dataset: taxi_data
+      threads: 1
+      timeout_seconds: 300
+      location: US

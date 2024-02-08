@@ -1,0 +1,4 @@
+checks for report_rev_pertrip:
+  - min(revenue_per_trip):
+      fail: when <= 0
+      name: Revenue per trip is greater than 0

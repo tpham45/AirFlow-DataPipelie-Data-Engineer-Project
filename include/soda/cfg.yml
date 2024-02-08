@@ -1,0 +1,17 @@
+#set up google connections with soda and airflow
+data_source taxi_data:
+  type: bigquery
+  connection:
+    account_info_json_path: /usr/local/airflow/include/gcp/airflow_key_gcp_setting.json
+    auth_scopes:
+    - https://www.googleapis.com/auth/bigquery
+    - https://www.googleapis.com/auth/cloud-platform
+    - https://www.googleapis.com/auth/drive
+    project_id: 'taxi-project-412919'
+    dataset: taxi_data
+
+#set up soda api keys for airflow    
+soda_cloud:
+  host: cloud.us.soda.io
+  api_key_id: 55dd9df9-5817-40db-9c62-921892a7a46e
+  api_key_secret: hmTB7y6-sr3GtP-TE7eFSBAQhYjN7D0U_3iTquzYRQ2d2e4uD4rr0Q

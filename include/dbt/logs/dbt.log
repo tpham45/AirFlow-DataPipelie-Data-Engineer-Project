@@ -1,0 +1,2383 @@
+[0m09:37:14.133176 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc749bc350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc74c9a010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc74cacd90>]}
+
+
+============================== 09:37:14.141148 | 956e0ff5-c884-4cea-8cbf-923eebdf73e7 ==============================
+[0m09:37:14.141148 [info ] [MainThread]: Running with dbt=1.7.7
+[0m09:37:14.142558 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'indirect_selection': 'eager', 'quiet': 'False', 'log_format': 'default', 'cache_selected_only': 'False', 'debug': 'False', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'printer_width': '80', 'fail_fast': 'False', 'introspect': 'True', 'no_print': 'None', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt', 'write_json': 'True'}
+[0m09:37:14.263525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '956e0ff5-c884-4cea-8cbf-923eebdf73e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc7471c850>]}
+[0m09:37:14.268549 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-s8yt55lj'
+[0m09:37:14.269945 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m09:37:14.677363 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m09:37:14.683675 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m09:37:14.777218 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m09:37:14.807613 [info ] [MainThread]: Updating lock file in file path: /usr/local/airflow/include/dbt/package-lock.yml
+[0m09:37:14.832363 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-ooqvckvl'
+[0m09:37:14.840952 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m09:37:18.220432 [info ] [MainThread]: Installed from version 1.1.1
+[0m09:37:18.221974 [info ] [MainThread]: Up to date!
+[0m09:37:18.223480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '956e0ff5-c884-4cea-8cbf-923eebdf73e7', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc7474cd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc7474da10>]}
+[0m09:37:18.225861 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 4.158405, "process_user_time": 2.769886, "process_kernel_time": 0.762442, "process_mem_max_rss": "113884", "process_in_blocks": "360", "process_out_blocks": "200"}
+[0m09:37:18.227127 [debug] [MainThread]: Command `dbt deps` succeeded at 09:37:18.226916 after 4.16 seconds
+[0m09:37:18.228165 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc74e35290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc749a84d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcc749be3d0>]}
+[0m09:37:18.229170 [debug] [MainThread]: Flushing usage events
+[0m09:38:34.515796 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd9b02f810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd9b448c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd9b950f50>]}
+
+
+============================== 09:38:34.523230 | b51a6a8e-0fad-4b7b-a0fb-8c159a3bd470 ==============================
+[0m09:38:34.523230 [info ] [MainThread]: Running with dbt=1.7.7
+[0m09:38:34.524711 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'no_print': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'printer_width': '80', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'warn_error': 'None', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'log_cache_events': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_format': 'default', 'log_path': '/usr/local/airflow/include/dbt/logs', 'quiet': 'False'}
+[0m09:38:35.163305 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "taxi_data", target "dev" invalid: 'service_account' is not one of ['oauth', 'service-account', 'service-account-json', 'oauth-secrets']
+[0m09:38:35.165415 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.70329773, "process_user_time": 2.854291, "process_kernel_time": 0.150225, "process_mem_max_rss": "137988", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:38:35.166807 [debug] [MainThread]: Command `dbt run` failed at 09:38:35.166509 after 0.70 seconds
+[0m09:38:35.168236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd9b6391d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd9b639790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fdd9b47f850>]}
+[0m09:38:35.169390 [debug] [MainThread]: Flushing usage events
+[0m09:40:31.872691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51447c75d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5142959590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5143236990>]}
+
+
+============================== 09:40:31.878205 | 41b8d08a-df29-473d-878d-66abb20b86a4 ==============================
+[0m09:40:31.878205 [info ] [MainThread]: Running with dbt=1.7.7
+[0m09:40:31.879845 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'no_print': 'None', 'debug': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'write_json': 'True', 'log_format': 'default', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'use_colors': 'True', 'printer_width': '80', 'static_parser': 'True', 'version_check': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'log_path': '/usr/local/airflow/include/dbt/logs', 'log_cache_events': 'False', 'introspect': 'True', 'partial_parse': 'True'}
+[0m09:40:32.384655 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "taxi_data", target "dev" invalid: 'service_account' is not one of ['oauth', 'service-account', 'service-account-json', 'oauth-secrets']
+[0m09:40:32.386790 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.56341964, "process_user_time": 2.615026, "process_kernel_time": 0.179658, "process_mem_max_rss": "138244", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:40:32.388042 [debug] [MainThread]: Command `dbt run` failed at 09:40:32.387802 after 0.56 seconds
+[0m09:40:32.389169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f51432a4250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5142516a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f514278c510>]}
+[0m09:40:32.390141 [debug] [MainThread]: Flushing usage events
+[0m09:45:47.277064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3e54cf10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3e7cd5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3e9c01d0>]}
+
+
+============================== 09:45:47.282292 | bea6d9a8-39d6-415b-86b1-79718a66203f ==============================
+[0m09:45:47.282292 [info ] [MainThread]: Running with dbt=1.7.7
+[0m09:45:47.283756 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'target_path': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'cache_selected_only': 'False', 'version_check': 'True', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'log_format': 'default', 'printer_width': '80', 'static_parser': 'True', 'no_print': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'indirect_selection': 'eager'}
+[0m09:45:47.889223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bea6d9a8-39d6-415b-86b1-79718a66203f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3c552110>]}
+[0m09:45:47.971156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bea6d9a8-39d6-415b-86b1-79718a66203f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3e5663d0>]}
+[0m09:45:47.973136 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m09:45:48.002212 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m09:45:48.009631 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m09:45:48.010818 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bea6d9a8-39d6-415b-86b1-79718a66203f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3c8136d0>]}
+[0m09:45:50.134955 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bea6d9a8-39d6-415b-86b1-79718a66203f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3c539450>]}
+[0m09:45:50.164135 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bea6d9a8-39d6-415b-86b1-79718a66203f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3a049790>]}
+[0m09:45:50.165335 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m09:45:50.166571 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bea6d9a8-39d6-415b-86b1-79718a66203f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3a15fcd0>]}
+[0m09:45:50.169409 [info ] [MainThread]: 
+[0m09:45:50.171763 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:45:50.174873 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m09:45:50.176397 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:45:50.177386 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: ''NoneType' object has no attribute 'keys''
+[0m09:45:50.179372 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:45:50.180259 [debug] [MainThread]: Connection 'list_taxi-project-412919' was properly closed.
+[0m09:45:50.181169 [info ] [MainThread]: 
+[0m09:45:50.182182 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.01 seconds (0.01s).
+[0m09:45:50.183500 [error] [MainThread]: Encountered an error:
+Database Error
+  'NoneType' object has no attribute 'keys'
+[0m09:45:50.185464 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 2.9627469, "process_user_time": 4.120417, "process_kernel_time": 0.270027, "process_mem_max_rss": "150664", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:45:50.186843 [debug] [MainThread]: Command `dbt run` failed at 09:45:50.186579 after 2.96 seconds
+[0m09:45:50.187947 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3e536750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3e54d2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8d3ebbab50>]}
+[0m09:45:50.189397 [debug] [MainThread]: Flushing usage events
+[0m09:46:08.557277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea21a9c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea27290d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea25d6690>]}
+
+
+============================== 09:46:08.563445 | 6131db87-066e-4b2f-94a4-dd105d108050 ==============================
+[0m09:46:08.563445 [info ] [MainThread]: Running with dbt=1.7.7
+[0m09:46:08.564829 [debug] [MainThread]: running dbt with arguments {'log_format': 'default', 'debug': 'False', 'warn_error': 'None', 'introspect': 'True', 'log_cache_events': 'False', 'use_experimental_parser': 'False', 'use_colors': 'True', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'printer_width': '80', 'target_path': 'None', 'log_path': '/usr/local/airflow/include/dbt/logs', 'cache_selected_only': 'False', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'no_print': 'None', 'static_parser': 'True', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager'}
+[0m09:46:09.199287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6131db87-066e-4b2f-94a4-dd105d108050', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea0279810>]}
+[0m09:46:09.281718 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6131db87-066e-4b2f-94a4-dd105d108050', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea02a5810>]}
+[0m09:46:09.283359 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m09:46:09.310327 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m09:46:09.985715 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m09:46:09.986785 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m09:46:09.995622 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6131db87-066e-4b2f-94a4-dd105d108050', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea01c0990>]}
+[0m09:46:10.027331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6131db87-066e-4b2f-94a4-dd105d108050', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea0083750>]}
+[0m09:46:10.028622 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m09:46:10.029668 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6131db87-066e-4b2f-94a4-dd105d108050', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea010a2d0>]}
+[0m09:46:10.032453 [info ] [MainThread]: 
+[0m09:46:10.034318 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:46:10.036909 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m09:46:10.038142 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:46:10.039041 [debug] [ThreadPool]: BigQuery adapter: Got an error when attempting to create a bigquery client: ''NoneType' object has no attribute 'keys''
+[0m09:46:10.040833 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:46:10.041660 [debug] [MainThread]: Connection 'list_taxi-project-412919' was properly closed.
+[0m09:46:10.042629 [info ] [MainThread]: 
+[0m09:46:10.043889 [info ] [MainThread]: Finished running  in 0 hours 0 minutes and 0.01 seconds (0.01s).
+[0m09:46:10.045158 [error] [MainThread]: Encountered an error:
+Database Error
+  'NoneType' object has no attribute 'keys'
+[0m09:46:10.046993 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 1.5384746, "process_user_time": 2.80865, "process_kernel_time": 0.271804, "process_mem_max_rss": "146064", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:46:10.048495 [debug] [MainThread]: Command `dbt run` failed at 09:46:10.048284 after 1.54 seconds
+[0m09:46:10.049393 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea2405dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea217e450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5ea272a010>]}
+[0m09:46:10.050312 [debug] [MainThread]: Flushing usage events
+[0m09:51:04.592972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88891ee50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888d497d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888b66ed0>]}
+
+
+============================== 09:51:04.599023 | 7fcdc6dd-7f76-48b8-b7f4-be299986e055 ==============================
+[0m09:51:04.599023 [info ] [MainThread]: Running with dbt=1.7.7
+[0m09:51:04.600257 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/local/airflow/include/dbt/logs', 'printer_width': '80', 'introspect': 'True', 'write_json': 'True', 'use_colors': 'True', 'debug': 'False', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'log_format': 'default', 'version_check': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'static_parser': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'no_print': 'None', 'fail_fast': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'target_path': 'None', 'partial_parse': 'True', 'cache_selected_only': 'False'}
+[0m09:51:05.516723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8869f3f10>]}
+[0m09:51:05.600436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88872b1d0>]}
+[0m09:51:05.602048 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m09:51:05.627870 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m09:51:05.657869 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m09:51:05.659368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa886892e10>]}
+[0m09:51:07.739690 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88697d510>]}
+[0m09:51:07.768998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8843b61d0>]}
+[0m09:51:07.770362 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m09:51:07.771488 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8844afa10>]}
+[0m09:51:07.774432 [info ] [MainThread]: 
+[0m09:51:07.776280 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:51:07.779922 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m09:51:07.781221 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:51:08.130418 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_taxi-project-412919, now list_taxi-project-412919_taxi_data)
+[0m09:51:08.131822 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:51:08.428055 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8867fc950>]}
+[0m09:51:08.430004 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:51:08.431497 [info ] [MainThread]: 
+[0m09:51:08.442984 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_datetime
+[0m09:51:08.444151 [info ] [Thread-1 (]: 1 of 7 START sql table model taxi_data.dim_datetime ............................ [RUN]
+[0m09:51:08.445500 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_taxi-project-412919_taxi_data, now model.taxi_data.dim_datetime)
+[0m09:51:08.446462 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_datetime
+[0m09:51:08.454976 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_datetime"
+[0m09:51:08.470908 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (compile): 09:51:08.447348 => 09:51:08.470337
+[0m09:51:08.472271 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_datetime
+[0m09:51:08.513568 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_datetime"
+[0m09:51:08.526367 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:08.530157 [debug] [Thread-1 (]: On model.taxi_data.dim_datetime: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_datetime"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_datetime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_datetime table
+    select 
+        datetimeindex_id,
+        pick_datetime,
+        pick_day,
+        pick_month,
+        pick_year,
+        pick_weekday,
+        drop_datetime,
+        drop_hour,
+        drop_day,
+        drop_month,
+        drop_year,
+        drop_weekday
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:51:09.138650 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:887cf3cd-a94c-4c92-9fdb-9deb668920ba&page=queryresults
+[0m09:51:11.799374 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (execute): 09:51:08.472995 => 09:51:11.799063
+[0m09:51:11.801181 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8843c7110>]}
+[0m09:51:11.802350 [info ] [Thread-1 (]: 1 of 7 OK created sql table model taxi_data.dim_datetime ....................... [[32mCREATE TABLE (100.0k rows, 9.2 MiB processed)[0m in 3.36s]
+[0m09:51:11.803810 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_datetime
+[0m09:51:11.804884 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_locaiton
+[0m09:51:11.805796 [info ] [Thread-1 (]: 2 of 7 START sql table model taxi_data.dim_locaiton ............................ [RUN]
+[0m09:51:11.807185 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_datetime, now model.taxi_data.dim_locaiton)
+[0m09:51:11.808012 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_locaiton
+[0m09:51:11.811859 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_locaiton"
+[0m09:51:11.818573 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (compile): 09:51:11.808648 => 09:51:11.817974
+[0m09:51:11.819678 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_locaiton
+[0m09:51:11.823784 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_locaiton"
+[0m09:51:11.829159 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:11.833634 [debug] [Thread-1 (]: On model.taxi_data.dim_locaiton: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_locaiton"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_locaiton`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_location table
+    select 
+        locationindex_id,
+        PUlocationCode,
+        pDOlocationCode
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:51:12.423791 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:0d59a2dc-0684-4f36-a8f7-f9028c4ad41c&page=queryresults
+[0m09:51:12.650002 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Unrecognized name: pDOlocationCode; Did you mean DOlocationCode? at [17:9]; reason: invalidQuery, location: query, message: Unrecognized name: pDOlocationCode; Did you mean DOlocationCode? at [17:9]')
+[0m09:51:13.787782 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:195bce75-6976-41a3-868a-e92613d88097&page=queryresults
+[0m09:51:14.003360 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:195bce75-6976-41a3-868a-e92613d88097&page=queryresults
+[0m09:51:14.005318 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (execute): 09:51:11.820316 => 09:51:14.004910
+[0m09:51:14.013615 [debug] [Thread-1 (]: Database Error in model dim_locaiton (models/transform/dim_locaiton.sql)
+  Unrecognized name: pDOlocationCode; Did you mean DOlocationCode? at [17:9]
+  compiled Code at target/run/taxi_data/models/transform/dim_locaiton.sql
+[0m09:51:14.015039 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8843ef550>]}
+[0m09:51:14.016475 [error] [Thread-1 (]: 2 of 7 ERROR creating sql table model taxi_data.dim_locaiton ................... [[31mERROR[0m in 2.21s]
+[0m09:51:14.017926 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_locaiton
+[0m09:51:14.019183 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_payment_type
+[0m09:51:14.020167 [info ] [Thread-1 (]: 3 of 7 START sql table model taxi_data.dim_payment_type ........................ [RUN]
+[0m09:51:14.021502 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_locaiton, now model.taxi_data.dim_payment_type)
+[0m09:51:14.022249 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_payment_type
+[0m09:51:14.026204 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_payment_type"
+[0m09:51:14.034594 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (compile): 09:51:14.022867 => 09:51:14.033950
+[0m09:51:14.035845 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_payment_type
+[0m09:51:14.040291 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_payment_type"
+[0m09:51:14.046043 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:14.050270 [debug] [Thread-1 (]: On model.taxi_data.dim_payment_type: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_payment_type"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_payment_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_paymenttype table
+    select 
+        payment_typeindex_id,
+        payment_type_id,
+        payment_type_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:51:14.711508 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:31fa514c-4468-4687-ad3d-6b91e467e9af&page=queryresults
+[0m09:51:16.822827 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (execute): 09:51:14.036571 => 09:51:16.822501
+[0m09:51:16.824676 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88433b390>]}
+[0m09:51:16.825854 [info ] [Thread-1 (]: 3 of 7 OK created sql table model taxi_data.dim_payment_type ................... [[32mCREATE TABLE (100.0k rows, 2.7 MiB processed)[0m in 2.80s]
+[0m09:51:16.827731 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_payment_type
+[0m09:51:16.829037 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_ratecode
+[0m09:51:16.830165 [info ] [Thread-1 (]: 4 of 7 START sql table model taxi_data.dim_ratecode ............................ [RUN]
+[0m09:51:16.831697 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_payment_type, now model.taxi_data.dim_ratecode)
+[0m09:51:16.832769 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_ratecode
+[0m09:51:16.837287 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_ratecode"
+[0m09:51:16.842926 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (compile): 09:51:16.833629 => 09:51:16.842568
+[0m09:51:16.843807 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_ratecode
+[0m09:51:16.848087 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_ratecode"
+[0m09:51:16.854305 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:16.857858 [debug] [Thread-1 (]: On model.taxi_data.dim_ratecode: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_ratecode"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_ratecode`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_ratecode table
+    select 
+        ratecodeIndex_id,
+        ratecode_id,
+        ratecode_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:51:17.361345 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:bdfa23c4-1f70-4f2c-b055-27b30f04efc8&page=queryresults
+[0m09:51:19.417204 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (execute): 09:51:16.844425 => 09:51:19.416854
+[0m09:51:19.419335 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8842ffa50>]}
+[0m09:51:19.420588 [info ] [Thread-1 (]: 4 of 7 OK created sql table model taxi_data.dim_ratecode ....................... [[32mCREATE TABLE (100.0k rows, 2.9 MiB processed)[0m in 2.59s]
+[0m09:51:19.422078 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_ratecode
+[0m09:51:19.423278 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_store_and_fwd_flag
+[0m09:51:19.424336 [info ] [Thread-1 (]: 5 of 7 START sql table model taxi_data.dim_store_and_fwd_flag .................. [RUN]
+[0m09:51:19.425790 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_ratecode, now model.taxi_data.dim_store_and_fwd_flag)
+[0m09:51:19.426857 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_store_and_fwd_flag
+[0m09:51:19.430919 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m09:51:19.439358 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (compile): 09:51:19.427621 => 09:51:19.438911
+[0m09:51:19.440359 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_store_and_fwd_flag
+[0m09:51:19.444358 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m09:51:19.451340 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:19.455314 [debug] [Thread-1 (]: On model.taxi_data.dim_store_and_fwd_flag: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_store_and_fwd_flag"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_store_and_fwd_flag`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_store_and_fwd_flag table
+    select 
+        store_and_fwd_flag_index_id,
+        store_and_fwd_flag_id,
+        store_and_fwd_flag_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:51:20.050097 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:e398656c-98e0-47fb-8811-c86638d6817c&page=queryresults
+[0m09:51:22.085539 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (execute): 09:51:19.440969 => 09:51:22.085169
+[0m09:51:22.087360 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa8844c5d10>]}
+[0m09:51:22.088673 [info ] [Thread-1 (]: 5 of 7 OK created sql table model taxi_data.dim_store_and_fwd_flag ............. [[32mCREATE TABLE (100.0k rows, 3.9 MiB processed)[0m in 2.66s]
+[0m09:51:22.089911 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_store_and_fwd_flag
+[0m09:51:22.090943 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_vendor
+[0m09:51:22.091821 [info ] [Thread-1 (]: 6 of 7 START sql table model taxi_data.dim_vendor .............................. [RUN]
+[0m09:51:22.093128 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_store_and_fwd_flag, now model.taxi_data.dim_vendor)
+[0m09:51:22.094038 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_vendor
+[0m09:51:22.098144 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_vendor"
+[0m09:51:22.104452 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (compile): 09:51:22.094809 => 09:51:22.103967
+[0m09:51:22.105434 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_vendor
+[0m09:51:22.110248 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_vendor"
+[0m09:51:22.115835 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:22.120608 [debug] [Thread-1 (]: On model.taxi_data.dim_vendor: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_vendor"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_vendor`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_vendo table
+    select 
+        vendorindex_id,
+        vendor_id,
+        vendor_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:51:22.790431 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:e5b12fe0-2ad7-4dd8-be86-e35b1c6279fe&page=queryresults
+[0m09:51:24.797199 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (execute): 09:51:22.106070 => 09:51:24.796817
+[0m09:51:24.799013 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa884354050>]}
+[0m09:51:24.800337 [info ] [Thread-1 (]: 6 of 7 OK created sql table model taxi_data.dim_vendor ......................... [[32mCREATE TABLE (100.0k rows, 3.3 MiB processed)[0m in 2.71s]
+[0m09:51:24.802349 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_vendor
+[0m09:51:24.803658 [debug] [Thread-1 (]: Began running node model.taxi_data.fact_trip
+[0m09:51:24.804852 [info ] [Thread-1 (]: 7 of 7 START sql table model taxi_data.fact_trip ............................... [RUN]
+[0m09:51:24.806164 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_vendor, now model.taxi_data.fact_trip)
+[0m09:51:24.806981 [debug] [Thread-1 (]: Began compiling node model.taxi_data.fact_trip
+[0m09:51:24.811048 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.fact_trip"
+[0m09:51:24.817276 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (compile): 09:51:24.807561 => 09:51:24.816858
+[0m09:51:24.818548 [debug] [Thread-1 (]: Began executing node model.taxi_data.fact_trip
+[0m09:51:24.823737 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.fact_trip"
+[0m09:51:24.829033 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:51:24.832577 [debug] [Thread-1 (]: On model.taxi_data.fact_trip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.fact_trip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`fact_trip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create fact_trip table
+    select 
+        trip_id,
+        vendorindex_id,
+        datetimeindex_id,
+        locationindex_id,
+        ratecodeindex_id,
+        payment_typeindex_id,
+        store_and_fwd_flag_index_id,
+        passenger_count,
+        trip_distance,
+        fare_amount,
+        extra,
+        mta_tax, 
+        tip_amount,
+        tolls_amount,
+        improvement_surcharge,
+        congestion_surcharge,
+        Airport_fee,
+        total_amount
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:51:25.420637 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:32963806-e18f-40a6-8035-3e3c43278458&page=queryresults
+[0m09:51:28.131409 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (execute): 09:51:24.819618 => 09:51:28.131051
+[0m09:51:28.133266 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '7fcdc6dd-7f76-48b8-b7f4-be299986e055', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88419dad0>]}
+[0m09:51:28.134716 [info ] [Thread-1 (]: 7 of 7 OK created sql table model taxi_data.fact_trip .......................... [[32mCREATE TABLE (100.0k rows, 13.7 MiB processed)[0m in 3.33s]
+[0m09:51:28.136828 [debug] [Thread-1 (]: Finished running node model.taxi_data.fact_trip
+[0m09:51:28.140490 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:51:28.141777 [debug] [MainThread]: Connection 'model.taxi_data.fact_trip' was properly closed.
+[0m09:51:28.142881 [info ] [MainThread]: 
+[0m09:51:28.144043 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 20.37 seconds (20.37s).
+[0m09:51:28.147070 [debug] [MainThread]: Command end result
+[0m09:51:28.176973 [info ] [MainThread]: 
+[0m09:51:28.178510 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m09:51:28.179821 [info ] [MainThread]: 
+[0m09:51:28.180950 [error] [MainThread]:   Database Error in model dim_locaiton (models/transform/dim_locaiton.sql)
+  Unrecognized name: pDOlocationCode; Did you mean DOlocationCode? at [17:9]
+  compiled Code at target/run/taxi_data/models/transform/dim_locaiton.sql
+[0m09:51:28.182082 [info ] [MainThread]: 
+[0m09:51:28.183256 [info ] [MainThread]: Done. PASS=6 WARN=0 ERROR=1 SKIP=0 TOTAL=7
+[0m09:51:28.185547 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 23.64882, "process_user_time": 5.283546, "process_kernel_time": 0.241074, "process_mem_max_rss": "164312", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:51:28.187825 [debug] [MainThread]: Command `dbt run` failed at 09:51:28.187396 after 23.65 seconds
+[0m09:51:28.189208 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888b7c750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa88890ea90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa888b823d0>]}
+[0m09:51:28.190360 [debug] [MainThread]: Flushing usage events
+[0m09:52:51.874607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be9dc5ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5bea28f5d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5bea29d810>]}
+
+
+============================== 09:52:51.881158 | 30d32b5b-d089-4bd6-8a5a-6d156eb075d2 ==============================
+[0m09:52:51.881158 [info ] [MainThread]: Running with dbt=1.7.7
+[0m09:52:51.882624 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'fail_fast': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'write_json': 'True', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'use_experimental_parser': 'False', 'target_path': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'static_parser': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'version_check': 'True', 'log_format': 'default', 'debug': 'False', 'indirect_selection': 'eager', 'partial_parse': 'True', 'no_print': 'None'}
+[0m09:52:52.542432 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be7faa350>]}
+[0m09:52:52.665667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be9dcdc90>]}
+[0m09:52:52.667833 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m09:52:52.706013 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m09:52:53.421355 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:52:53.423010 [debug] [MainThread]: Partial parsing: updated file: taxi_data://models/transform/dim_locaiton.sql
+[0m09:52:53.682122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5beb053490>]}
+[0m09:52:53.709684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be7fe6450>]}
+[0m09:52:53.710894 [info ] [MainThread]: Found 7 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m09:52:53.712120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be7e6ddd0>]}
+[0m09:52:53.714995 [info ] [MainThread]: 
+[0m09:52:53.716946 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m09:52:53.719748 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m09:52:53.720855 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:52:54.028484 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_taxi-project-412919, now list_taxi-project-412919_taxi_data)
+[0m09:52:54.029936 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m09:52:54.294844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be9dc4090>]}
+[0m09:52:54.296518 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m09:52:54.297484 [info ] [MainThread]: 
+[0m09:52:54.305469 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_datetime
+[0m09:52:54.307543 [info ] [Thread-1 (]: 1 of 7 START sql table model taxi_data.dim_datetime ............................ [RUN]
+[0m09:52:54.308963 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_taxi-project-412919_taxi_data, now model.taxi_data.dim_datetime)
+[0m09:52:54.310091 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_datetime
+[0m09:52:54.318693 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_datetime"
+[0m09:52:54.326129 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (compile): 09:52:54.310912 => 09:52:54.325434
+[0m09:52:54.327485 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_datetime
+[0m09:52:54.346644 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:52:54.722758 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_datetime"
+[0m09:52:54.729013 [debug] [Thread-1 (]: On model.taxi_data.dim_datetime: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_datetime"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_datetime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_datetime table
+    select 
+        datetimeindex_id,
+        pick_datetime,
+        pick_day,
+        pick_month,
+        pick_year,
+        pick_weekday,
+        drop_datetime,
+        drop_hour,
+        drop_day,
+        drop_month,
+        drop_year,
+        drop_weekday
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:52:55.191131 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:cbe5c626-5c18-4a0b-bc07-1f4d4af589de&page=queryresults
+[0m09:52:57.580728 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (execute): 09:52:54.328237 => 09:52:57.580392
+[0m09:52:57.582371 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be7d897d0>]}
+[0m09:52:57.583400 [info ] [Thread-1 (]: 1 of 7 OK created sql table model taxi_data.dim_datetime ....................... [[32mCREATE TABLE (100.0k rows, 9.2 MiB processed)[0m in 3.27s]
+[0m09:52:57.584820 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_datetime
+[0m09:52:57.586114 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_locaiton
+[0m09:52:57.587224 [info ] [Thread-1 (]: 2 of 7 START sql table model taxi_data.dim_locaiton ............................ [RUN]
+[0m09:52:57.588616 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_datetime, now model.taxi_data.dim_locaiton)
+[0m09:52:57.589588 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_locaiton
+[0m09:52:57.593850 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_locaiton"
+[0m09:52:57.599045 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (compile): 09:52:57.590366 => 09:52:57.598688
+[0m09:52:57.600027 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_locaiton
+[0m09:52:57.604558 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_locaiton"
+[0m09:52:57.610759 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:52:57.614622 [debug] [Thread-1 (]: On model.taxi_data.dim_locaiton: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_locaiton"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_locaiton`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_location table
+    select 
+        locationindex_id,
+        PUlocationCode,
+        DOlocationCode
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:52:58.199901 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:962aa6a5-483c-4ae1-82b4-709fdeb59d5b&page=queryresults
+[0m09:53:00.557950 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (execute): 09:52:57.600765 => 09:53:00.557570
+[0m09:53:00.559923 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be7fe5850>]}
+[0m09:53:00.561167 [info ] [Thread-1 (]: 2 of 7 OK created sql table model taxi_data.dim_locaiton ....................... [[32mCREATE TABLE (100.0k rows, 2.3 MiB processed)[0m in 2.97s]
+[0m09:53:00.562630 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_locaiton
+[0m09:53:00.563790 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_payment_type
+[0m09:53:00.564836 [info ] [Thread-1 (]: 3 of 7 START sql table model taxi_data.dim_payment_type ........................ [RUN]
+[0m09:53:00.566460 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_locaiton, now model.taxi_data.dim_payment_type)
+[0m09:53:00.567351 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_payment_type
+[0m09:53:00.574125 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_payment_type"
+[0m09:53:00.580456 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (compile): 09:53:00.567995 => 09:53:00.579985
+[0m09:53:00.581406 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_payment_type
+[0m09:53:00.584668 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:53:00.905061 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_payment_type"
+[0m09:53:00.912909 [debug] [Thread-1 (]: On model.taxi_data.dim_payment_type: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_payment_type"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_payment_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_paymenttype table
+    select 
+        payment_typeindex_id,
+        payment_type_id,
+        payment_type_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:53:01.390370 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:aeeb8539-f33b-4ded-bad0-ceb099d2d31a&page=queryresults
+[0m09:53:03.802078 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (execute): 09:53:00.582057 => 09:53:03.801732
+[0m09:53:03.803840 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be7fd2790>]}
+[0m09:53:03.804986 [info ] [Thread-1 (]: 3 of 7 OK created sql table model taxi_data.dim_payment_type ................... [[32mCREATE TABLE (100.0k rows, 2.7 MiB processed)[0m in 3.24s]
+[0m09:53:03.806637 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_payment_type
+[0m09:53:03.808035 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_ratecode
+[0m09:53:03.809554 [info ] [Thread-1 (]: 4 of 7 START sql table model taxi_data.dim_ratecode ............................ [RUN]
+[0m09:53:03.811169 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_payment_type, now model.taxi_data.dim_ratecode)
+[0m09:53:03.812135 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_ratecode
+[0m09:53:03.816059 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_ratecode"
+[0m09:53:03.820800 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (compile): 09:53:03.812836 => 09:53:03.820464
+[0m09:53:03.821595 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_ratecode
+[0m09:53:03.832778 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:53:04.153219 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_ratecode"
+[0m09:53:04.161122 [debug] [Thread-1 (]: On model.taxi_data.dim_ratecode: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_ratecode"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_ratecode`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_ratecode table
+    select 
+        ratecodeIndex_id,
+        ratecode_id,
+        ratecode_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:53:04.575646 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:cf1c78b1-5ffa-43b0-a0ea-32ea226160c1&page=queryresults
+[0m09:53:06.643140 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (execute): 09:53:03.822234 => 09:53:06.642545
+[0m09:53:06.645404 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be5a27510>]}
+[0m09:53:06.646642 [info ] [Thread-1 (]: 4 of 7 OK created sql table model taxi_data.dim_ratecode ....................... [[32mCREATE TABLE (100.0k rows, 2.9 MiB processed)[0m in 2.83s]
+[0m09:53:06.648189 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_ratecode
+[0m09:53:06.649448 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_store_and_fwd_flag
+[0m09:53:06.650457 [info ] [Thread-1 (]: 5 of 7 START sql table model taxi_data.dim_store_and_fwd_flag .................. [RUN]
+[0m09:53:06.652001 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_ratecode, now model.taxi_data.dim_store_and_fwd_flag)
+[0m09:53:06.652977 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_store_and_fwd_flag
+[0m09:53:06.657496 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m09:53:06.663902 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (compile): 09:53:06.653810 => 09:53:06.663407
+[0m09:53:06.664852 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_store_and_fwd_flag
+[0m09:53:06.668357 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:53:07.017259 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m09:53:07.024492 [debug] [Thread-1 (]: On model.taxi_data.dim_store_and_fwd_flag: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_store_and_fwd_flag"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_store_and_fwd_flag`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_store_and_fwd_flag table
+    select 
+        store_and_fwd_flag_index_id,
+        store_and_fwd_flag_id,
+        store_and_fwd_flag_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:53:07.387883 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:7343f2b7-e395-45fd-b46e-65e863903ad2&page=queryresults
+[0m09:53:09.435581 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (execute): 09:53:06.665492 => 09:53:09.435208
+[0m09:53:09.437353 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be5a27ed0>]}
+[0m09:53:09.438932 [info ] [Thread-1 (]: 5 of 7 OK created sql table model taxi_data.dim_store_and_fwd_flag ............. [[32mCREATE TABLE (100.0k rows, 3.9 MiB processed)[0m in 2.79s]
+[0m09:53:09.440676 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_store_and_fwd_flag
+[0m09:53:09.442007 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_vendor
+[0m09:53:09.443291 [info ] [Thread-1 (]: 6 of 7 START sql table model taxi_data.dim_vendor .............................. [RUN]
+[0m09:53:09.445125 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_store_and_fwd_flag, now model.taxi_data.dim_vendor)
+[0m09:53:09.446184 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_vendor
+[0m09:53:09.450285 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_vendor"
+[0m09:53:09.456649 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (compile): 09:53:09.446924 => 09:53:09.456177
+[0m09:53:09.457759 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_vendor
+[0m09:53:09.461569 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:53:09.787338 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_vendor"
+[0m09:53:09.793693 [debug] [Thread-1 (]: On model.taxi_data.dim_vendor: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_vendor"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_vendor`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_vendo table
+    select 
+        vendorindex_id,
+        vendor_id,
+        vendor_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:53:10.219355 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:a5635eec-cc33-4ddc-859f-dbba4d7e8739&page=queryresults
+[0m09:53:12.236260 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (execute): 09:53:09.458551 => 09:53:12.235948
+[0m09:53:12.237991 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be7e88810>]}
+[0m09:53:12.239284 [info ] [Thread-1 (]: 6 of 7 OK created sql table model taxi_data.dim_vendor ......................... [[32mCREATE TABLE (100.0k rows, 3.3 MiB processed)[0m in 2.79s]
+[0m09:53:12.241165 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_vendor
+[0m09:53:12.242310 [debug] [Thread-1 (]: Began running node model.taxi_data.fact_trip
+[0m09:53:12.243665 [info ] [Thread-1 (]: 7 of 7 START sql table model taxi_data.fact_trip ............................... [RUN]
+[0m09:53:12.245716 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_vendor, now model.taxi_data.fact_trip)
+[0m09:53:12.247057 [debug] [Thread-1 (]: Began compiling node model.taxi_data.fact_trip
+[0m09:53:12.251591 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.fact_trip"
+[0m09:53:12.258241 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (compile): 09:53:12.247952 => 09:53:12.257664
+[0m09:53:12.259471 [debug] [Thread-1 (]: Began executing node model.taxi_data.fact_trip
+[0m09:53:12.263600 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m09:53:12.622397 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.fact_trip"
+[0m09:53:12.630070 [debug] [Thread-1 (]: On model.taxi_data.fact_trip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.fact_trip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`fact_trip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create fact_trip table
+    select 
+        trip_id,
+        vendorindex_id,
+        datetimeindex_id,
+        locationindex_id,
+        ratecodeindex_id,
+        payment_typeindex_id,
+        store_and_fwd_flag_index_id,
+        passenger_count,
+        trip_distance,
+        fare_amount,
+        extra,
+        mta_tax, 
+        tip_amount,
+        tolls_amount,
+        improvement_surcharge,
+        congestion_surcharge,
+        Airport_fee,
+        total_amount
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m09:53:13.120103 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:eb29f973-8193-4162-a9f4-210377e0279a&page=queryresults
+[0m09:53:15.445737 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (execute): 09:53:12.260467 => 09:53:15.445376
+[0m09:53:15.447476 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '30d32b5b-d089-4bd6-8a5a-6d156eb075d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5be8092350>]}
+[0m09:53:15.448738 [info ] [Thread-1 (]: 7 of 7 OK created sql table model taxi_data.fact_trip .......................... [[32mCREATE TABLE (100.0k rows, 13.7 MiB processed)[0m in 3.20s]
+[0m09:53:15.450376 [debug] [Thread-1 (]: Finished running node model.taxi_data.fact_trip
+[0m09:53:15.453466 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m09:53:15.454289 [debug] [MainThread]: Connection 'model.taxi_data.fact_trip' was properly closed.
+[0m09:53:15.455146 [info ] [MainThread]: 
+[0m09:53:15.456140 [info ] [MainThread]: Finished running 7 table models in 0 hours 0 minutes and 21.74 seconds (21.74s).
+[0m09:53:15.458738 [debug] [MainThread]: Command end result
+[0m09:53:15.496061 [info ] [MainThread]: 
+[0m09:53:15.497755 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m09:53:15.499002 [info ] [MainThread]: 
+[0m09:53:15.500178 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m09:53:15.501968 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 23.685617, "process_user_time": 3.925707, "process_kernel_time": 0.240964, "process_mem_max_rss": "163072", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:53:15.503203 [debug] [MainThread]: Command `dbt run` succeeded at 09:53:15.502958 after 23.69 seconds
+[0m09:53:15.504154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5bea0eb2d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5bea1a94d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f5beeb0aa10>]}
+[0m09:53:15.504930 [debug] [MainThread]: Flushing usage events
+[0m23:31:52.030609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ec0bb7150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebec31810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebeedab50>]}
+
+
+============================== 23:31:52.037071 | 35e5dc17-33c9-4d45-88dc-2b57ba00366a ==============================
+[0m23:31:52.037071 [info ] [MainThread]: Running with dbt=1.7.7
+[0m23:31:52.038508 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt deps', 'static_parser': 'True', 'quiet': 'False', 'write_json': 'True', 'use_colors': 'True', 'cache_selected_only': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'partial_parse': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'use_experimental_parser': 'False', 'debug': 'False', 'target_path': 'None', 'printer_width': '80', 'version_check': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_format': 'default', 'no_print': 'None'}
+[0m23:31:52.144630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '35e5dc17-33c9-4d45-88dc-2b57ba00366a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebebc0910>]}
+[0m23:31:52.410753 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-znc8zoy3'
+[0m23:31:52.411832 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m23:31:52.497635 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m23:31:52.501557 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m23:31:52.632146 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m23:31:52.641925 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m23:31:55.799657 [info ] [MainThread]: Installed from version 1.1.1
+[0m23:31:55.801043 [info ] [MainThread]: Up to date!
+[0m23:31:55.802367 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '35e5dc17-33c9-4d45-88dc-2b57ba00366a', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebebc1fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebeb57fd0>]}
+[0m23:31:55.804719 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 3.825286, "process_user_time": 2.570116, "process_kernel_time": 0.416501, "process_mem_max_rss": "111476", "process_out_blocks": "200", "process_in_blocks": "0"}
+[0m23:31:55.806108 [debug] [MainThread]: Command `dbt deps` succeeded at 23:31:55.805887 after 3.83 seconds
+[0m23:31:55.807219 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebed76210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ec33cc250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7ebeeda190>]}
+[0m23:31:55.808432 [debug] [MainThread]: Flushing usage events
+[0m23:32:48.137649 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dee16e750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dee178150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dee3bf8d0>]}
+
+
+============================== 23:32:48.143117 | 12aa3ec0-f296-4063-99ca-c925f41b9906 ==============================
+[0m23:32:48.143117 [info ] [MainThread]: Running with dbt=1.7.7
+[0m23:32:48.144312 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'target_path': 'None', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'log_format': 'default', 'fail_fast': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'indirect_selection': 'eager', 'warn_error': 'None', 'static_parser': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'printer_width': '80', 'version_check': 'True', 'write_json': 'True'}
+[0m23:32:48.715376 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6debb49ed0>]}
+[0m23:32:48.798174 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dedbbd250>]}
+[0m23:32:48.800422 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m23:32:48.827122 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m23:32:49.472504 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m23:32:49.473631 [debug] [MainThread]: Partial parsing: added file: taxi_data://models/report/report_trip_perhr.sql
+[0m23:32:49.714626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6deb9053d0>]}
+[0m23:32:49.741526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6deb938150>]}
+[0m23:32:49.742772 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m23:32:49.743911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6deb8ecd90>]}
+[0m23:32:49.746857 [info ] [MainThread]: 
+[0m23:32:49.748788 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:32:49.751067 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m23:32:49.752139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:32:50.088718 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_taxi-project-412919, now list_taxi-project-412919_taxi_data)
+[0m23:32:50.089877 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:32:50.379399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6debb62290>]}
+[0m23:32:50.380908 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:32:50.382068 [info ] [MainThread]: 
+[0m23:32:50.389748 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_datetime
+[0m23:32:50.392132 [info ] [Thread-1 (]: 1 of 8 START sql table model taxi_data.dim_datetime ............................ [RUN]
+[0m23:32:50.393903 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_taxi-project-412919_taxi_data, now model.taxi_data.dim_datetime)
+[0m23:32:50.395034 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_datetime
+[0m23:32:50.403436 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_datetime"
+[0m23:32:50.410772 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (compile): 23:32:50.395905 => 23:32:50.410251
+[0m23:32:50.411897 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_datetime
+[0m23:32:50.429720 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:32:50.784717 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_datetime"
+[0m23:32:50.792026 [debug] [Thread-1 (]: On model.taxi_data.dim_datetime: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_datetime"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_datetime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_datetime table
+    select 
+        datetimeindex_id,
+        pick_datetime,
+        pick_day,
+        pick_month,
+        pick_year,
+        pick_weekday,
+        drop_datetime,
+        drop_hour,
+        drop_day,
+        drop_month,
+        drop_year,
+        drop_weekday
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:32:51.324026 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:c585336d-4ce3-4e7a-a2c9-38dc4775d474&page=queryresults
+[0m23:32:53.747543 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (execute): 23:32:50.412819 => 23:32:53.747235
+[0m23:32:53.749340 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6deb9fe6d0>]}
+[0m23:32:53.750548 [info ] [Thread-1 (]: 1 of 8 OK created sql table model taxi_data.dim_datetime ....................... [[32mCREATE TABLE (100.0k rows, 9.2 MiB processed)[0m in 3.36s]
+[0m23:32:53.752255 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_datetime
+[0m23:32:53.753678 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_locaiton
+[0m23:32:53.754679 [info ] [Thread-1 (]: 2 of 8 START sql table model taxi_data.dim_locaiton ............................ [RUN]
+[0m23:32:53.756206 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_datetime, now model.taxi_data.dim_locaiton)
+[0m23:32:53.757248 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_locaiton
+[0m23:32:53.761531 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_locaiton"
+[0m23:32:53.768505 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (compile): 23:32:53.757964 => 23:32:53.768005
+[0m23:32:53.769523 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_locaiton
+[0m23:32:53.773254 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:32:54.233840 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_locaiton"
+[0m23:32:54.240552 [debug] [Thread-1 (]: On model.taxi_data.dim_locaiton: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_locaiton"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_locaiton`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_location table
+    select 
+        locationindex_id,
+        PUlocationCode,
+        DOlocationCode
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:32:54.648081 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:9f35c8a5-c22b-4fe8-b5c6-b4e438eabaef&page=queryresults
+[0m23:32:56.777789 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (execute): 23:32:53.770254 => 23:32:56.777475
+[0m23:32:56.779610 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6debbed950>]}
+[0m23:32:56.781075 [info ] [Thread-1 (]: 2 of 8 OK created sql table model taxi_data.dim_locaiton ....................... [[32mCREATE TABLE (100.0k rows, 2.3 MiB processed)[0m in 3.02s]
+[0m23:32:56.782889 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_locaiton
+[0m23:32:56.784027 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_payment_type
+[0m23:32:56.785037 [info ] [Thread-1 (]: 3 of 8 START sql table model taxi_data.dim_payment_type ........................ [RUN]
+[0m23:32:56.786537 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_locaiton, now model.taxi_data.dim_payment_type)
+[0m23:32:56.787487 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_payment_type
+[0m23:32:56.791823 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_payment_type"
+[0m23:32:56.798408 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (compile): 23:32:56.788288 => 23:32:56.797966
+[0m23:32:56.799324 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_payment_type
+[0m23:32:56.802586 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:32:57.164136 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_payment_type"
+[0m23:32:57.170096 [debug] [Thread-1 (]: On model.taxi_data.dim_payment_type: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_payment_type"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_payment_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_paymenttype table
+    select 
+        payment_typeindex_id,
+        payment_type_id,
+        payment_type_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:32:57.599157 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:a1a5c334-6f9b-4051-994c-b9d366eb9a23&page=queryresults
+[0m23:32:59.731185 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (execute): 23:32:56.799963 => 23:32:59.730855
+[0m23:32:59.733046 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6deba120d0>]}
+[0m23:32:59.734271 [info ] [Thread-1 (]: 3 of 8 OK created sql table model taxi_data.dim_payment_type ................... [[32mCREATE TABLE (100.0k rows, 2.7 MiB processed)[0m in 2.95s]
+[0m23:32:59.736043 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_payment_type
+[0m23:32:59.737129 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_ratecode
+[0m23:32:59.738055 [info ] [Thread-1 (]: 4 of 8 START sql table model taxi_data.dim_ratecode ............................ [RUN]
+[0m23:32:59.739422 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_payment_type, now model.taxi_data.dim_ratecode)
+[0m23:32:59.740481 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_ratecode
+[0m23:32:59.744449 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_ratecode"
+[0m23:32:59.750739 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (compile): 23:32:59.741181 => 23:32:59.750342
+[0m23:32:59.751787 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_ratecode
+[0m23:32:59.765766 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:33:00.082855 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_ratecode"
+[0m23:33:00.089170 [debug] [Thread-1 (]: On model.taxi_data.dim_ratecode: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_ratecode"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_ratecode`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_ratecode table
+    select 
+        ratecodeIndex_id,
+        ratecode_id,
+        ratecode_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:33:00.557224 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:dfd9d789-0271-40d6-892e-c517c01135df&page=queryresults
+[0m23:33:02.986249 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (execute): 23:32:59.752622 => 23:33:02.985930
+[0m23:33:02.987950 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6de9825ed0>]}
+[0m23:33:02.989127 [info ] [Thread-1 (]: 4 of 8 OK created sql table model taxi_data.dim_ratecode ....................... [[32mCREATE TABLE (100.0k rows, 2.9 MiB processed)[0m in 3.25s]
+[0m23:33:02.990929 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_ratecode
+[0m23:33:02.992069 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:33:02.992928 [info ] [Thread-1 (]: 5 of 8 START sql table model taxi_data.dim_store_and_fwd_flag .................. [RUN]
+[0m23:33:02.994144 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_ratecode, now model.taxi_data.dim_store_and_fwd_flag)
+[0m23:33:02.994934 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_store_and_fwd_flag
+[0m23:33:02.998523 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:33:03.004065 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (compile): 23:33:02.995527 => 23:33:03.003775
+[0m23:33:03.004879 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_store_and_fwd_flag
+[0m23:33:03.007953 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:33:03.337380 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:33:03.344260 [debug] [Thread-1 (]: On model.taxi_data.dim_store_and_fwd_flag: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_store_and_fwd_flag"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_store_and_fwd_flag`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_store_and_fwd_flag table
+    select 
+        store_and_fwd_flag_index_id,
+        store_and_fwd_flag_id,
+        store_and_fwd_flag_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:33:03.874209 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:c512feb7-4d5c-454b-b73f-88d801ce58f2&page=queryresults
+[0m23:33:05.939717 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (execute): 23:33:03.005495 => 23:33:05.939436
+[0m23:33:05.941323 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6debbc3c10>]}
+[0m23:33:05.942432 [info ] [Thread-1 (]: 5 of 8 OK created sql table model taxi_data.dim_store_and_fwd_flag ............. [[32mCREATE TABLE (100.0k rows, 3.9 MiB processed)[0m in 2.95s]
+[0m23:33:05.943812 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:33:05.944886 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_vendor
+[0m23:33:05.945833 [info ] [Thread-1 (]: 6 of 8 START sql table model taxi_data.dim_vendor .............................. [RUN]
+[0m23:33:05.947216 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_store_and_fwd_flag, now model.taxi_data.dim_vendor)
+[0m23:33:05.948110 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_vendor
+[0m23:33:05.952023 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_vendor"
+[0m23:33:05.957630 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (compile): 23:33:05.948799 => 23:33:05.957309
+[0m23:33:05.958474 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_vendor
+[0m23:33:05.961720 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:33:06.270679 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_vendor"
+[0m23:33:06.277493 [debug] [Thread-1 (]: On model.taxi_data.dim_vendor: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_vendor"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_vendor`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_vendo table
+    select 
+        vendorindex_id,
+        vendor_id,
+        vendor_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:33:06.697800 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:02b03a20-0180-4f0e-aad3-9f5946070b6a&page=queryresults
+[0m23:33:08.737552 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (execute): 23:33:05.959054 => 23:33:08.737234
+[0m23:33:08.739205 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6deb72e310>]}
+[0m23:33:08.740332 [info ] [Thread-1 (]: 6 of 8 OK created sql table model taxi_data.dim_vendor ......................... [[32mCREATE TABLE (100.0k rows, 3.3 MiB processed)[0m in 2.79s]
+[0m23:33:08.741827 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_vendor
+[0m23:33:08.742875 [debug] [Thread-1 (]: Began running node model.taxi_data.fact_trip
+[0m23:33:08.743853 [info ] [Thread-1 (]: 7 of 8 START sql table model taxi_data.fact_trip ............................... [RUN]
+[0m23:33:08.745235 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_vendor, now model.taxi_data.fact_trip)
+[0m23:33:08.746133 [debug] [Thread-1 (]: Began compiling node model.taxi_data.fact_trip
+[0m23:33:08.750341 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.fact_trip"
+[0m23:33:08.756593 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (compile): 23:33:08.746807 => 23:33:08.756236
+[0m23:33:08.757404 [debug] [Thread-1 (]: Began executing node model.taxi_data.fact_trip
+[0m23:33:08.760761 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:33:09.089222 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.fact_trip"
+[0m23:33:09.096028 [debug] [Thread-1 (]: On model.taxi_data.fact_trip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.fact_trip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`fact_trip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create fact_trip table
+    select 
+        trip_id,
+        vendorindex_id,
+        datetimeindex_id,
+        locationindex_id,
+        ratecodeindex_id,
+        payment_typeindex_id,
+        store_and_fwd_flag_index_id,
+        passenger_count,
+        trip_distance,
+        fare_amount,
+        extra,
+        mta_tax, 
+        tip_amount,
+        tolls_amount,
+        improvement_surcharge,
+        congestion_surcharge,
+        Airport_fee,
+        total_amount
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:33:09.504282 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:a08496ea-ab9c-4b67-aeb3-8e4156647535&page=queryresults
+[0m23:33:11.831464 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (execute): 23:33:08.757985 => 23:33:11.831174
+[0m23:33:11.833162 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6deb794110>]}
+[0m23:33:11.834368 [info ] [Thread-1 (]: 7 of 8 OK created sql table model taxi_data.fact_trip .......................... [[32mCREATE TABLE (100.0k rows, 13.7 MiB processed)[0m in 3.09s]
+[0m23:33:11.835792 [debug] [Thread-1 (]: Finished running node model.taxi_data.fact_trip
+[0m23:33:11.837473 [debug] [Thread-1 (]: Began running node model.taxi_data.report_trip_perhr
+[0m23:33:11.838507 [info ] [Thread-1 (]: 8 of 8 START sql table model taxi_data.report_trip_perhr ....................... [RUN]
+[0m23:33:11.839889 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.fact_trip, now model.taxi_data.report_trip_perhr)
+[0m23:33:11.840779 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_trip_perhr
+[0m23:33:11.844845 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_trip_perhr"
+[0m23:33:11.854816 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (compile): 23:33:11.841425 => 23:33:11.854244
+[0m23:33:11.855875 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_trip_perhr
+[0m23:33:11.873729 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_trip_perhr"
+[0m23:33:11.883831 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:33:11.888377 [debug] [Thread-1 (]: On model.taxi_data.report_trip_perhr: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_trip_perhr"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_trip_perhr`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with time_convert as (
+    select 
+        d.datetimeindex_id,
+        cast(d.pick_datetime as timestamp) as pickup_timestamp,
+        cast(d.drop_datetime as timestamp) as dropoff_timestamp,
+        -- Extract the hour from the pickup timestamp
+        extract(hour from cast(d.pick_datetime as timestamp)) as pickup_hour
+    from `taxi-project-412919`.`taxi_data`.`dim_datetime` d
+    join `taxi-project-412919`.`taxi_data`.`fact_trip` f 
+        on d.datetimeindex_id = f.datetimeindex_id
+)
+select
+    t.pickup_hour,
+    count(t.datetimeindex_id) as trips_per_hour
+from time_convert t
+group by pickup_hour
+order by pickup_hour;
+    );
+  
+[0m23:33:12.188492 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:efd765d5-377b-4b42-8925-a13e30cc3294&page=queryresults
+[0m23:33:12.191036 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got ";" at [29:21]; reason: invalidQuery, location: query, message: Syntax error: Expected ")" but got ";" at [29:21]')
+[0m23:33:13.178141 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:4e9ae1c6-afb3-4d0c-9c84-5361495189e1&page=queryresults
+[0m23:33:13.180453 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:4e9ae1c6-afb3-4d0c-9c84-5361495189e1&page=queryresults
+[0m23:33:13.182135 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (execute): 23:33:11.856509 => 23:33:13.181768
+[0m23:33:13.190399 [debug] [Thread-1 (]: Database Error in model report_trip_perhr (models/report/report_trip_perhr.sql)
+  Syntax error: Expected ")" but got ";" at [29:21]
+  compiled Code at target/run/taxi_data/models/report/report_trip_perhr.sql
+[0m23:33:13.191896 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '12aa3ec0-f296-4063-99ca-c925f41b9906', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6de9849250>]}
+[0m23:33:13.193099 [error] [Thread-1 (]: 8 of 8 ERROR creating sql table model taxi_data.report_trip_perhr .............. [[31mERROR[0m in 1.35s]
+[0m23:33:13.194827 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_trip_perhr
+[0m23:33:13.198313 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:33:13.199652 [debug] [MainThread]: Connection 'model.taxi_data.report_trip_perhr' was properly closed.
+[0m23:33:13.201009 [info ] [MainThread]: 
+[0m23:33:13.202368 [info ] [MainThread]: Finished running 8 table models in 0 hours 0 minutes and 23.45 seconds (23.45s).
+[0m23:33:13.206182 [debug] [MainThread]: Command end result
+[0m23:33:13.232390 [info ] [MainThread]: 
+[0m23:33:13.233942 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m23:33:13.235650 [info ] [MainThread]: 
+[0m23:33:13.236959 [error] [MainThread]:   Database Error in model report_trip_perhr (models/report/report_trip_perhr.sql)
+  Syntax error: Expected ")" but got ";" at [29:21]
+  compiled Code at target/run/taxi_data/models/report/report_trip_perhr.sql
+[0m23:33:13.238340 [info ] [MainThread]: 
+[0m23:33:13.239729 [info ] [MainThread]: Done. PASS=7 WARN=0 ERROR=1 SKIP=0 TOTAL=8
+[0m23:33:13.241780 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 25.153341, "process_user_time": 3.669015, "process_kernel_time": 0.219941, "process_mem_max_rss": "161908", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:33:13.243043 [debug] [MainThread]: Command `dbt run` failed at 23:33:13.242834 after 25.15 seconds
+[0m23:33:13.244138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dee16e250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dee16c850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6dedfdac90>]}
+[0m23:33:13.245222 [debug] [MainThread]: Flushing usage events
+[0m23:35:53.267767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c6f23bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c74fad90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c6f226d0>]}
+
+
+============================== 23:35:53.273055 | adaec43d-d77f-4d37-a250-d8c5a1613b70 ==============================
+[0m23:35:53.273055 [info ] [MainThread]: Running with dbt=1.7.7
+[0m23:35:53.274451 [debug] [MainThread]: running dbt with arguments {'log_path': '/usr/local/airflow/include/dbt/logs', 'static_parser': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'partial_parse': 'True', 'introspect': 'True', 'profiles_dir': '/usr/local/airflow/include/dbt/', 'indirect_selection': 'eager', 'log_format': 'default', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt/', 'warn_error': 'None', 'printer_width': '80', 'cache_selected_only': 'False', 'use_colors': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'debug': 'False', 'write_json': 'True', 'no_print': 'None', 'version_check': 'True'}
+[0m23:35:54.102933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c508ce90>]}
+[0m23:35:54.186623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c6d696d0>]}
+[0m23:35:54.188394 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m23:35:54.217654 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m23:35:55.194676 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m23:35:55.196857 [debug] [MainThread]: Partial parsing: updated file: taxi_data://models/report/report_trip_perhr.sql
+[0m23:35:55.470036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4f2bb10>]}
+[0m23:35:55.500111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4cbf8d0>]}
+[0m23:35:55.501540 [info ] [MainThread]: Found 8 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m23:35:55.502888 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4df9690>]}
+[0m23:35:55.506171 [info ] [MainThread]: 
+[0m23:35:55.508633 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:35:55.512079 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m23:35:55.513788 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:35:55.841996 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_taxi-project-412919, now list_taxi-project-412919_taxi_data)
+[0m23:35:55.843150 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:35:56.109521 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c513cc10>]}
+[0m23:35:56.111167 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:35:56.112126 [info ] [MainThread]: 
+[0m23:35:56.119845 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_datetime
+[0m23:35:56.121596 [info ] [Thread-1 (]: 1 of 8 START sql table model taxi_data.dim_datetime ............................ [RUN]
+[0m23:35:56.123006 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_taxi-project-412919_taxi_data, now model.taxi_data.dim_datetime)
+[0m23:35:56.123987 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_datetime
+[0m23:35:56.133226 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_datetime"
+[0m23:35:56.138602 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (compile): 23:35:56.124664 => 23:35:56.138166
+[0m23:35:56.139710 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_datetime
+[0m23:35:56.158252 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:35:56.518862 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_datetime"
+[0m23:35:56.525016 [debug] [Thread-1 (]: On model.taxi_data.dim_datetime: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_datetime"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_datetime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_datetime table
+    select 
+        datetimeindex_id,
+        pick_datetime,
+        pick_day,
+        pick_month,
+        pick_year,
+        pick_weekday,
+        drop_datetime,
+        drop_hour,
+        drop_day,
+        drop_month,
+        drop_year,
+        drop_weekday
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:35:56.926280 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:8b007c06-9a04-4851-9594-1c215ea8709a&page=queryresults
+[0m23:35:59.628883 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (execute): 23:35:56.140781 => 23:35:59.628563
+[0m23:35:59.630580 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4f6b050>]}
+[0m23:35:59.631791 [info ] [Thread-1 (]: 1 of 8 OK created sql table model taxi_data.dim_datetime ....................... [[32mCREATE TABLE (100.0k rows, 9.2 MiB processed)[0m in 3.51s]
+[0m23:35:59.633493 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_datetime
+[0m23:35:59.634802 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_locaiton
+[0m23:35:59.635816 [info ] [Thread-1 (]: 2 of 8 START sql table model taxi_data.dim_locaiton ............................ [RUN]
+[0m23:35:59.637316 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_datetime, now model.taxi_data.dim_locaiton)
+[0m23:35:59.638355 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_locaiton
+[0m23:35:59.642658 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_locaiton"
+[0m23:35:59.648815 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (compile): 23:35:59.639117 => 23:35:59.648333
+[0m23:35:59.649960 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_locaiton
+[0m23:35:59.654021 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:35:59.977404 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_locaiton"
+[0m23:35:59.983146 [debug] [Thread-1 (]: On model.taxi_data.dim_locaiton: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_locaiton"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_locaiton`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_location table
+    select 
+        locationindex_id,
+        PUlocationCode,
+        DOlocationCode
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:36:00.315446 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:08f1f9e8-7058-40ec-9da6-be3e4fa043eb&page=queryresults
+[0m23:36:02.726208 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (execute): 23:35:59.650787 => 23:36:02.725911
+[0m23:36:02.727658 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4e5ac50>]}
+[0m23:36:02.728598 [info ] [Thread-1 (]: 2 of 8 OK created sql table model taxi_data.dim_locaiton ....................... [[32mCREATE TABLE (100.0k rows, 2.3 MiB processed)[0m in 3.09s]
+[0m23:36:02.729983 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_locaiton
+[0m23:36:02.731071 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_payment_type
+[0m23:36:02.731958 [info ] [Thread-1 (]: 3 of 8 START sql table model taxi_data.dim_payment_type ........................ [RUN]
+[0m23:36:02.733254 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_locaiton, now model.taxi_data.dim_payment_type)
+[0m23:36:02.734112 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_payment_type
+[0m23:36:02.738219 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_payment_type"
+[0m23:36:02.744043 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (compile): 23:36:02.734667 => 23:36:02.743569
+[0m23:36:02.745094 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_payment_type
+[0m23:36:02.748860 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:36:03.094345 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_payment_type"
+[0m23:36:03.102559 [debug] [Thread-1 (]: On model.taxi_data.dim_payment_type: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_payment_type"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_payment_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_paymenttype table
+    select 
+        payment_typeindex_id,
+        payment_type_id,
+        payment_type_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:36:03.492817 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:0ddfff43-663b-42a8-aad9-b9dec3af274d&page=queryresults
+[0m23:36:06.159910 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (execute): 23:36:02.745830 => 23:36:06.159472
+[0m23:36:06.161806 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4f2ba50>]}
+[0m23:36:06.162993 [info ] [Thread-1 (]: 3 of 8 OK created sql table model taxi_data.dim_payment_type ................... [[32mCREATE TABLE (100.0k rows, 2.7 MiB processed)[0m in 3.43s]
+[0m23:36:06.164410 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_payment_type
+[0m23:36:06.165575 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_ratecode
+[0m23:36:06.166527 [info ] [Thread-1 (]: 4 of 8 START sql table model taxi_data.dim_ratecode ............................ [RUN]
+[0m23:36:06.167995 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_payment_type, now model.taxi_data.dim_ratecode)
+[0m23:36:06.168959 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_ratecode
+[0m23:36:06.173893 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_ratecode"
+[0m23:36:06.179009 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (compile): 23:36:06.169608 => 23:36:06.178654
+[0m23:36:06.179759 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_ratecode
+[0m23:36:06.191469 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:36:06.520140 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_ratecode"
+[0m23:36:06.526421 [debug] [Thread-1 (]: On model.taxi_data.dim_ratecode: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_ratecode"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_ratecode`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_ratecode table
+    select 
+        ratecodeIndex_id,
+        ratecode_id,
+        ratecode_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:36:07.039115 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:a040fd1f-89b8-44dd-81c6-6448f0357983&page=queryresults
+[0m23:36:08.997892 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (execute): 23:36:06.180289 => 23:36:08.997585
+[0m23:36:08.999418 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4bb7410>]}
+[0m23:36:09.000449 [info ] [Thread-1 (]: 4 of 8 OK created sql table model taxi_data.dim_ratecode ....................... [[32mCREATE TABLE (100.0k rows, 2.9 MiB processed)[0m in 2.83s]
+[0m23:36:09.002371 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_ratecode
+[0m23:36:09.003615 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:36:09.004586 [info ] [Thread-1 (]: 5 of 8 START sql table model taxi_data.dim_store_and_fwd_flag .................. [RUN]
+[0m23:36:09.006110 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_ratecode, now model.taxi_data.dim_store_and_fwd_flag)
+[0m23:36:09.007030 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_store_and_fwd_flag
+[0m23:36:09.011377 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:36:09.017498 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (compile): 23:36:09.007709 => 23:36:09.016945
+[0m23:36:09.018526 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_store_and_fwd_flag
+[0m23:36:09.021614 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:36:09.320100 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:36:09.326458 [debug] [Thread-1 (]: On model.taxi_data.dim_store_and_fwd_flag: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_store_and_fwd_flag"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_store_and_fwd_flag`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_store_and_fwd_flag table
+    select 
+        store_and_fwd_flag_index_id,
+        store_and_fwd_flag_id,
+        store_and_fwd_flag_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:36:09.709308 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:20785313-0f77-4e1c-8652-be7900833daa&page=queryresults
+[0m23:36:12.193391 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (execute): 23:36:09.019051 => 23:36:12.193076
+[0m23:36:12.195032 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4bb5b10>]}
+[0m23:36:12.196068 [info ] [Thread-1 (]: 5 of 8 OK created sql table model taxi_data.dim_store_and_fwd_flag ............. [[32mCREATE TABLE (100.0k rows, 3.9 MiB processed)[0m in 3.19s]
+[0m23:36:12.197625 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:36:12.198819 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_vendor
+[0m23:36:12.199861 [info ] [Thread-1 (]: 6 of 8 START sql table model taxi_data.dim_vendor .............................. [RUN]
+[0m23:36:12.201237 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_store_and_fwd_flag, now model.taxi_data.dim_vendor)
+[0m23:36:12.202084 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_vendor
+[0m23:36:12.206054 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_vendor"
+[0m23:36:12.212537 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (compile): 23:36:12.202734 => 23:36:12.211948
+[0m23:36:12.213483 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_vendor
+[0m23:36:12.216514 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:36:12.780376 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_vendor"
+[0m23:36:12.787464 [debug] [Thread-1 (]: On model.taxi_data.dim_vendor: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_vendor"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_vendor`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_vendo table
+    select 
+        vendorindex_id,
+        vendor_id,
+        vendor_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:36:13.260117 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:e36bf37f-b637-4844-ad52-50f3cd73b0e9&page=queryresults
+[0m23:36:15.619124 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (execute): 23:36:12.214055 => 23:36:15.618801
+[0m23:36:15.620783 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4bc0690>]}
+[0m23:36:15.622149 [info ] [Thread-1 (]: 6 of 8 OK created sql table model taxi_data.dim_vendor ......................... [[32mCREATE TABLE (100.0k rows, 3.3 MiB processed)[0m in 3.42s]
+[0m23:36:15.623826 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_vendor
+[0m23:36:15.624918 [debug] [Thread-1 (]: Began running node model.taxi_data.fact_trip
+[0m23:36:15.625891 [info ] [Thread-1 (]: 7 of 8 START sql table model taxi_data.fact_trip ............................... [RUN]
+[0m23:36:15.627440 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_vendor, now model.taxi_data.fact_trip)
+[0m23:36:15.628289 [debug] [Thread-1 (]: Began compiling node model.taxi_data.fact_trip
+[0m23:36:15.632642 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.fact_trip"
+[0m23:36:15.638029 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (compile): 23:36:15.628946 => 23:36:15.637712
+[0m23:36:15.638852 [debug] [Thread-1 (]: Began executing node model.taxi_data.fact_trip
+[0m23:36:15.641782 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:36:15.960509 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.fact_trip"
+[0m23:36:15.966586 [debug] [Thread-1 (]: On model.taxi_data.fact_trip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.fact_trip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`fact_trip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create fact_trip table
+    select 
+        trip_id,
+        vendorindex_id,
+        datetimeindex_id,
+        locationindex_id,
+        ratecodeindex_id,
+        payment_typeindex_id,
+        store_and_fwd_flag_index_id,
+        passenger_count,
+        trip_distance,
+        fare_amount,
+        extra,
+        mta_tax, 
+        tip_amount,
+        tolls_amount,
+        improvement_surcharge,
+        congestion_surcharge,
+        Airport_fee,
+        total_amount
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:36:16.386300 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:0d708534-a235-4e49-9662-a43086108082&page=queryresults
+[0m23:36:18.728459 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (execute): 23:36:15.639399 => 23:36:18.728116
+[0m23:36:18.730098 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4d02e50>]}
+[0m23:36:18.731497 [info ] [Thread-1 (]: 7 of 8 OK created sql table model taxi_data.fact_trip .......................... [[32mCREATE TABLE (100.0k rows, 13.7 MiB processed)[0m in 3.10s]
+[0m23:36:18.733264 [debug] [Thread-1 (]: Finished running node model.taxi_data.fact_trip
+[0m23:36:18.735040 [debug] [Thread-1 (]: Began running node model.taxi_data.report_trip_perhr
+[0m23:36:18.735987 [info ] [Thread-1 (]: 8 of 8 START sql table model taxi_data.report_trip_perhr ....................... [RUN]
+[0m23:36:18.737420 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.fact_trip, now model.taxi_data.report_trip_perhr)
+[0m23:36:18.738258 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_trip_perhr
+[0m23:36:18.742432 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_trip_perhr"
+[0m23:36:18.746990 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (compile): 23:36:18.738844 => 23:36:18.746717
+[0m23:36:18.747772 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_trip_perhr
+[0m23:36:18.764118 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_trip_perhr"
+[0m23:36:18.769023 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:36:18.772508 [debug] [Thread-1 (]: On model.taxi_data.report_trip_perhr: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_trip_perhr"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_trip_perhr`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with time_convert as (
+    select 
+        d.datetimeindex_id,
+        cast(d.pick_datetime as timestamp) as pickup_timestamp,
+        cast(d.drop_datetime as timestamp) as dropoff_timestamp,
+        -- Extract the hour from the pickup timestamp
+        extract(hour from cast(d.pick_datetime as timestamp)) as pickup_hour
+    from `taxi-project-412919`.`taxi_data`.`dim_datetime` d
+    join `taxi-project-412919`.`taxi_data`.`fact_trip` f 
+        on d.datetimeindex_id = f.datetimeindex_id
+)
+
+select
+    t.pickup_hour,
+    count(t.datetimeindex_id) as trips_per_hour
+from time_convert t
+group by t.pickup_hour
+order by t.pickup_hour
+    );
+  
+[0m23:36:19.321857 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:a093c5c9-0461-4471-bab5-aac785fc9d1f&page=queryresults
+[0m23:36:21.408336 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (execute): 23:36:18.748323 => 23:36:21.407992
+[0m23:36:21.409882 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'adaec43d-d77f-4d37-a250-d8c5a1613b70', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c4f6a550>]}
+[0m23:36:21.411035 [info ] [Thread-1 (]: 8 of 8 OK created sql table model taxi_data.report_trip_perhr .................. [[32mCREATE TABLE (24.0 rows, 2.3 MiB processed)[0m in 2.67s]
+[0m23:36:21.412302 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_trip_perhr
+[0m23:36:21.415464 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:36:21.416305 [debug] [MainThread]: Connection 'model.taxi_data.report_trip_perhr' was properly closed.
+[0m23:36:21.417312 [info ] [MainThread]: 
+[0m23:36:21.418457 [info ] [MainThread]: Finished running 8 table models in 0 hours 0 minutes and 25.91 seconds (25.91s).
+[0m23:36:21.421763 [debug] [MainThread]: Command end result
+[0m23:36:21.442828 [info ] [MainThread]: 
+[0m23:36:21.444050 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:36:21.445146 [info ] [MainThread]: 
+[0m23:36:21.446330 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 TOTAL=8
+[0m23:36:21.448359 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 28.22912, "process_user_time": 4.063239, "process_kernel_time": 0.364902, "process_mem_max_rss": "161976", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:36:21.449675 [debug] [MainThread]: Command `dbt run` succeeded at 23:36:21.449486 after 28.23 seconds
+[0m23:36:21.450721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c6f233d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98c6f23650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f98cbac4310>]}
+[0m23:36:21.451640 [debug] [MainThread]: Flushing usage events
+[0m23:56:02.783478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce34d5ae90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce34d3b750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce34b692d0>]}
+
+
+============================== 23:56:02.788816 | c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce ==============================
+[0m23:56:02.788816 [info ] [MainThread]: Running with dbt=1.7.7
+[0m23:56:02.790311 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'fail_fast': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'use_colors': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'no_print': 'None', 'introspect': 'True', 'version_check': 'True', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'partial_parse': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'use_experimental_parser': 'False', 'profiles_dir': '/usr/local/airflow/include/dbt', 'warn_error': 'None'}
+[0m23:56:03.403513 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce34b6dfd0>]}
+[0m23:56:03.486687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce346f61d0>]}
+[0m23:56:03.488481 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m23:56:03.517865 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m23:56:04.191694 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m23:56:04.192944 [debug] [MainThread]: Partial parsing: added file: taxi_data://models/report/report_rev_perhr.sql
+[0m23:56:04.193826 [debug] [MainThread]: Partial parsing: added file: taxi_data://models/report/report_rev_pertrip.sql
+[0m23:56:04.450776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce327dc050>]}
+[0m23:56:04.479156 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce32514650>]}
+[0m23:56:04.480333 [info ] [MainThread]: Found 10 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m23:56:04.481458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce3268ff50>]}
+[0m23:56:04.484475 [info ] [MainThread]: 
+[0m23:56:04.486215 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:56:04.489527 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m23:56:04.490563 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:56:04.834093 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_taxi-project-412919, now list_taxi-project-412919_taxi_data)
+[0m23:56:04.835270 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:56:05.154873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce32662690>]}
+[0m23:56:05.156395 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:56:05.157249 [info ] [MainThread]: 
+[0m23:56:05.166374 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_datetime
+[0m23:56:05.167711 [info ] [Thread-1 (]: 1 of 10 START sql table model taxi_data.dim_datetime ........................... [RUN]
+[0m23:56:05.169100 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_taxi-project-412919_taxi_data, now model.taxi_data.dim_datetime)
+[0m23:56:05.170016 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_datetime
+[0m23:56:05.178309 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_datetime"
+[0m23:56:05.185531 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (compile): 23:56:05.170678 => 23:56:05.185038
+[0m23:56:05.186530 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_datetime
+[0m23:56:05.201730 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:05.564191 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_datetime"
+[0m23:56:05.570305 [debug] [Thread-1 (]: On model.taxi_data.dim_datetime: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_datetime"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_datetime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_datetime table
+    select 
+        datetimeindex_id,
+        pick_datetime,
+        pick_day,
+        pick_month,
+        pick_year,
+        pick_weekday,
+        drop_datetime,
+        drop_hour,
+        drop_day,
+        drop_month,
+        drop_year,
+        drop_weekday
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:56:05.992274 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:9be7200f-ca7c-429d-a02f-cf41c0d9c290&page=queryresults
+[0m23:56:08.110720 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (execute): 23:56:05.187226 => 23:56:08.110413
+[0m23:56:08.112516 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce3285efd0>]}
+[0m23:56:08.113664 [info ] [Thread-1 (]: 1 of 10 OK created sql table model taxi_data.dim_datetime ...................... [[32mCREATE TABLE (100.0k rows, 9.2 MiB processed)[0m in 2.94s]
+[0m23:56:08.115272 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_datetime
+[0m23:56:08.116787 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_locaiton
+[0m23:56:08.117833 [info ] [Thread-1 (]: 2 of 10 START sql table model taxi_data.dim_locaiton ........................... [RUN]
+[0m23:56:08.119276 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_datetime, now model.taxi_data.dim_locaiton)
+[0m23:56:08.120228 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_locaiton
+[0m23:56:08.124432 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_locaiton"
+[0m23:56:08.131912 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (compile): 23:56:08.121020 => 23:56:08.131358
+[0m23:56:08.133121 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_locaiton
+[0m23:56:08.137012 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:08.471923 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_locaiton"
+[0m23:56:08.477919 [debug] [Thread-1 (]: On model.taxi_data.dim_locaiton: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_locaiton"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_locaiton`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_location table
+    select 
+        locationindex_id,
+        PUlocationCode,
+        DOlocationCode
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:56:08.897146 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:e341aabe-059e-4c25-b3ea-ae86749f6d04&page=queryresults
+[0m23:56:10.963179 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (execute): 23:56:08.133932 => 23:56:10.962890
+[0m23:56:10.964791 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce328a6290>]}
+[0m23:56:10.965851 [info ] [Thread-1 (]: 2 of 10 OK created sql table model taxi_data.dim_locaiton ...................... [[32mCREATE TABLE (100.0k rows, 2.3 MiB processed)[0m in 2.85s]
+[0m23:56:10.967374 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_locaiton
+[0m23:56:10.968853 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_payment_type
+[0m23:56:10.970334 [info ] [Thread-1 (]: 3 of 10 START sql table model taxi_data.dim_payment_type ....................... [RUN]
+[0m23:56:10.971866 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_locaiton, now model.taxi_data.dim_payment_type)
+[0m23:56:10.972908 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_payment_type
+[0m23:56:10.977131 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_payment_type"
+[0m23:56:10.983681 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (compile): 23:56:10.973659 => 23:56:10.983032
+[0m23:56:10.985070 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_payment_type
+[0m23:56:10.989215 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:11.324807 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_payment_type"
+[0m23:56:11.330224 [debug] [Thread-1 (]: On model.taxi_data.dim_payment_type: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_payment_type"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_payment_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_paymenttype table
+    select 
+        payment_typeindex_id,
+        payment_type_id,
+        payment_type_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:56:11.728348 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:af36a30a-a072-4c07-8cdd-3fd317254a91&page=queryresults
+[0m23:56:13.810267 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (execute): 23:56:10.985968 => 23:56:13.809915
+[0m23:56:13.812206 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce328a4410>]}
+[0m23:56:13.813879 [info ] [Thread-1 (]: 3 of 10 OK created sql table model taxi_data.dim_payment_type .................. [[32mCREATE TABLE (100.0k rows, 2.7 MiB processed)[0m in 2.84s]
+[0m23:56:13.816602 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_payment_type
+[0m23:56:13.819119 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_ratecode
+[0m23:56:13.820586 [info ] [Thread-1 (]: 4 of 10 START sql table model taxi_data.dim_ratecode ........................... [RUN]
+[0m23:56:13.822734 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_payment_type, now model.taxi_data.dim_ratecode)
+[0m23:56:13.824313 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_ratecode
+[0m23:56:13.848765 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_ratecode"
+[0m23:56:13.858745 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (compile): 23:56:13.825276 => 23:56:13.858045
+[0m23:56:13.860008 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_ratecode
+[0m23:56:13.863841 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:14.200460 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_ratecode"
+[0m23:56:14.207189 [debug] [Thread-1 (]: On model.taxi_data.dim_ratecode: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_ratecode"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_ratecode`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_ratecode table
+    select 
+        ratecodeIndex_id,
+        ratecode_id,
+        ratecode_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:56:14.568169 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:2c78fe1f-4569-4787-a5be-55b09d7bb950&page=queryresults
+[0m23:56:17.004835 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (execute): 23:56:13.860824 => 23:56:17.004500
+[0m23:56:17.006375 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce32887b90>]}
+[0m23:56:17.007486 [info ] [Thread-1 (]: 4 of 10 OK created sql table model taxi_data.dim_ratecode ...................... [[32mCREATE TABLE (100.0k rows, 2.9 MiB processed)[0m in 3.18s]
+[0m23:56:17.008942 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_ratecode
+[0m23:56:17.010276 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:56:17.011180 [info ] [Thread-1 (]: 5 of 10 START sql table model taxi_data.dim_store_and_fwd_flag ................. [RUN]
+[0m23:56:17.012451 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_ratecode, now model.taxi_data.dim_store_and_fwd_flag)
+[0m23:56:17.013265 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_store_and_fwd_flag
+[0m23:56:17.017127 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:56:17.022610 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (compile): 23:56:17.013862 => 23:56:17.022067
+[0m23:56:17.023752 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_store_and_fwd_flag
+[0m23:56:17.027599 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:17.345852 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:56:17.353321 [debug] [Thread-1 (]: On model.taxi_data.dim_store_and_fwd_flag: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_store_and_fwd_flag"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_store_and_fwd_flag`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_store_and_fwd_flag table
+    select 
+        store_and_fwd_flag_index_id,
+        store_and_fwd_flag_id,
+        store_and_fwd_flag_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:56:17.746831 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:4cbbc150-8984-443c-859c-d6c1c552a22e&page=queryresults
+[0m23:56:19.820655 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (execute): 23:56:17.024530 => 23:56:19.820249
+[0m23:56:19.822361 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce32781e50>]}
+[0m23:56:19.823630 [info ] [Thread-1 (]: 5 of 10 OK created sql table model taxi_data.dim_store_and_fwd_flag ............ [[32mCREATE TABLE (100.0k rows, 3.9 MiB processed)[0m in 2.81s]
+[0m23:56:19.825095 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:56:19.826357 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_vendor
+[0m23:56:19.827383 [info ] [Thread-1 (]: 6 of 10 START sql table model taxi_data.dim_vendor ............................. [RUN]
+[0m23:56:19.828709 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_store_and_fwd_flag, now model.taxi_data.dim_vendor)
+[0m23:56:19.829516 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_vendor
+[0m23:56:19.833647 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_vendor"
+[0m23:56:19.839181 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (compile): 23:56:19.830128 => 23:56:19.838763
+[0m23:56:19.840047 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_vendor
+[0m23:56:19.844130 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:20.198436 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_vendor"
+[0m23:56:20.204394 [debug] [Thread-1 (]: On model.taxi_data.dim_vendor: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_vendor"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_vendor`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_vendo table
+    select 
+        vendorindex_id,
+        vendor_id,
+        vendor_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:56:20.634625 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:301111f8-3f6f-40cd-941b-479e10576bae&page=queryresults
+[0m23:56:22.713194 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (execute): 23:56:19.840812 => 23:56:22.712821
+[0m23:56:22.715337 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce32782790>]}
+[0m23:56:22.716637 [info ] [Thread-1 (]: 6 of 10 OK created sql table model taxi_data.dim_vendor ........................ [[32mCREATE TABLE (100.0k rows, 3.3 MiB processed)[0m in 2.89s]
+[0m23:56:22.718116 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_vendor
+[0m23:56:22.719282 [debug] [Thread-1 (]: Began running node model.taxi_data.fact_trip
+[0m23:56:22.720249 [info ] [Thread-1 (]: 7 of 10 START sql table model taxi_data.fact_trip .............................. [RUN]
+[0m23:56:22.721648 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_vendor, now model.taxi_data.fact_trip)
+[0m23:56:22.722545 [debug] [Thread-1 (]: Began compiling node model.taxi_data.fact_trip
+[0m23:56:22.726710 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.fact_trip"
+[0m23:56:22.733469 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (compile): 23:56:22.723230 => 23:56:22.732854
+[0m23:56:22.734655 [debug] [Thread-1 (]: Began executing node model.taxi_data.fact_trip
+[0m23:56:22.737897 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:23.066168 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.fact_trip"
+[0m23:56:23.072798 [debug] [Thread-1 (]: On model.taxi_data.fact_trip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.fact_trip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`fact_trip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create fact_trip table
+    select 
+        trip_id,
+        vendorindex_id,
+        datetimeindex_id,
+        locationindex_id,
+        ratecodeindex_id,
+        payment_typeindex_id,
+        store_and_fwd_flag_index_id,
+        passenger_count,
+        trip_distance,
+        fare_amount,
+        extra,
+        mta_tax, 
+        tip_amount,
+        tolls_amount,
+        improvement_surcharge,
+        congestion_surcharge,
+        Airport_fee,
+        total_amount
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:56:23.484762 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:093b6864-664f-4ac1-b873-8cd08c78350f&page=queryresults
+[0m23:56:25.799059 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (execute): 23:56:22.735353 => 23:56:25.798671
+[0m23:56:25.800914 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce3298b410>]}
+[0m23:56:25.802010 [info ] [Thread-1 (]: 7 of 10 OK created sql table model taxi_data.fact_trip ......................... [[32mCREATE TABLE (100.0k rows, 13.7 MiB processed)[0m in 3.08s]
+[0m23:56:25.803469 [debug] [Thread-1 (]: Finished running node model.taxi_data.fact_trip
+[0m23:56:25.805530 [debug] [Thread-1 (]: Began running node model.taxi_data.report_rev_perhr
+[0m23:56:25.806607 [info ] [Thread-1 (]: 8 of 10 START sql table model taxi_data.report_rev_perhr ....................... [RUN]
+[0m23:56:25.808080 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.fact_trip, now model.taxi_data.report_rev_perhr)
+[0m23:56:25.808950 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_rev_perhr
+[0m23:56:25.825741 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_rev_perhr"
+[0m23:56:25.831989 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_perhr (compile): 23:56:25.809658 => 23:56:25.831426
+[0m23:56:25.833105 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_rev_perhr
+[0m23:56:25.837817 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_rev_perhr"
+[0m23:56:25.843441 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:25.847100 [debug] [Thread-1 (]: On model.taxi_data.report_rev_perhr: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_rev_perhr"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_rev_perhr`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with time_convert as (
+    select 
+        d.datetimeindex_id,
+        cast(d.pick_datetime as timestamp) as pickup_timestamp,
+        cast(d.drop_datetime as timestamp) as dropoff_timestamp,
+        -- Extract the hour from the pickup timestamp
+        extract(hour from cast(d.pick_datetime as timestamp)) as pickup_hour
+    from `taxi-project-412919`.`taxi_data`.`dim_datetime` d
+    join `taxi-project-412919`.`taxi_data`.`fact_trip` f 
+        on d.datetimeindex_id = f.datetimeindex_id
+),
+fact_trip_cte as (
+    select  
+        extract(hour from t.pickup_timestamp) as pickup_hour,
+        count(ft.trip_id) as total_trip,
+        sum(ft.total_amount) as total_revenue
+    from time_convert t
+    join  `taxi-project-412919`.`taxi_data`.`fact_trip` ft
+    on t.datetimeindex_id = ft.datetimeindex_id
+    group by pickup_hour
+)
+select 
+    fc.pickup_hour,
+    case when fc.total_trip > 0 then fc.total_revenue / fc.total_trip else 0 end as revenue_per_hour
+from fact_trip_cte fc
+order by fc.pickup_hour;
+    );
+  
+[0m23:56:26.160941 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:3794195e-b864-4a37-9ed7-f435be43cbc2&page=queryresults
+[0m23:56:26.163529 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected ")" but got ";" at [38:24]; reason: invalidQuery, location: query, message: Syntax error: Expected ")" but got ";" at [38:24]')
+[0m23:56:26.772772 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:2169fd6d-95b5-4952-9c99-048e261edfb2&page=queryresults
+[0m23:56:26.775287 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:2169fd6d-95b5-4952-9c99-048e261edfb2&page=queryresults
+[0m23:56:26.777031 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_perhr (execute): 23:56:25.833932 => 23:56:26.776602
+[0m23:56:26.784057 [debug] [Thread-1 (]: Database Error in model report_rev_perhr (models/report/report_rev_perhr.sql)
+  Syntax error: Expected ")" but got ";" at [38:24]
+  compiled Code at target/run/taxi_data/models/report/report_rev_perhr.sql
+[0m23:56:26.785504 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce324e72d0>]}
+[0m23:56:26.786700 [error] [Thread-1 (]: 8 of 10 ERROR creating sql table model taxi_data.report_rev_perhr .............. [[31mERROR[0m in 0.98s]
+[0m23:56:26.788377 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_rev_perhr
+[0m23:56:26.789589 [debug] [Thread-1 (]: Began running node model.taxi_data.report_rev_pertrip
+[0m23:56:26.790700 [info ] [Thread-1 (]: 9 of 10 START sql table model taxi_data.report_rev_pertrip ..................... [RUN]
+[0m23:56:26.792207 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.report_rev_perhr, now model.taxi_data.report_rev_pertrip)
+[0m23:56:26.793099 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_rev_pertrip
+[0m23:56:26.797049 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_rev_pertrip"
+[0m23:56:26.802955 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_pertrip (compile): 23:56:26.793815 => 23:56:26.802508
+[0m23:56:26.804074 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_rev_pertrip
+[0m23:56:26.808149 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_rev_pertrip"
+[0m23:56:26.813383 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:26.817333 [debug] [Thread-1 (]: On model.taxi_data.report_rev_pertrip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_rev_pertrip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_rev_pertrip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with total_fact_trip(
+    select  
+        count (f.trip_id) as total_trip,
+        sum (f.total_amount) as total_revenue
+    from `taxi-project-412919`.`taxi_data`.`fact_trip` f
+)
+
+select 
+    (t.total_revenue/t.total_trip) as revenue_per_trip
+from total_fact_trip t
+    );
+  
+[0m23:56:27.133550 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:426f9e48-e24d-4179-9280-a88c14b30b2f&page=queryresults
+[0m23:56:27.135834 [debug] [Thread-1 (]: BigQuery adapter: Retry attempt 1 of 1 after error: BadRequest('Syntax error: Expected keyword AS but got "(" at [13:27]; reason: invalidQuery, location: query, message: Syntax error: Expected keyword AS but got "(" at [13:27]')
+[0m23:56:27.445076 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:bd77091d-54c7-4e7a-9c03-d32eb1d26df9&page=queryresults
+[0m23:56:27.447498 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:bd77091d-54c7-4e7a-9c03-d32eb1d26df9&page=queryresults
+[0m23:56:27.449043 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_pertrip (execute): 23:56:26.804786 => 23:56:27.448667
+[0m23:56:27.453125 [debug] [Thread-1 (]: Database Error in model report_rev_pertrip (models/report/report_rev_pertrip.sql)
+  Syntax error: Expected keyword AS but got "(" at [13:27]
+  compiled Code at target/run/taxi_data/models/report/report_rev_pertrip.sql
+[0m23:56:27.454099 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce32538d50>]}
+[0m23:56:27.455222 [error] [Thread-1 (]: 9 of 10 ERROR creating sql table model taxi_data.report_rev_pertrip ............ [[31mERROR[0m in 0.66s]
+[0m23:56:27.456233 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_rev_pertrip
+[0m23:56:27.457342 [debug] [Thread-1 (]: Began running node model.taxi_data.report_trip_perhr
+[0m23:56:27.458285 [info ] [Thread-1 (]: 10 of 10 START sql table model taxi_data.report_trip_perhr ..................... [RUN]
+[0m23:56:27.459486 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.report_rev_pertrip, now model.taxi_data.report_trip_perhr)
+[0m23:56:27.460457 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_trip_perhr
+[0m23:56:27.464744 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_trip_perhr"
+[0m23:56:27.471010 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (compile): 23:56:27.461121 => 23:56:27.470512
+[0m23:56:27.472009 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_trip_perhr
+[0m23:56:27.475418 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:56:27.781792 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_trip_perhr"
+[0m23:56:27.788114 [debug] [Thread-1 (]: On model.taxi_data.report_trip_perhr: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_trip_perhr"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_trip_perhr`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with time_convert as (
+    select 
+        d.datetimeindex_id,
+        cast(d.pick_datetime as timestamp) as pickup_timestamp,
+        cast(d.drop_datetime as timestamp) as dropoff_timestamp,
+        -- Extract the hour from the pickup timestamp
+        extract(hour from cast(d.pick_datetime as timestamp)) as pickup_hour
+    from `taxi-project-412919`.`taxi_data`.`dim_datetime` d
+    join `taxi-project-412919`.`taxi_data`.`fact_trip` f 
+        on d.datetimeindex_id = f.datetimeindex_id
+)
+
+select
+    t.pickup_hour,
+    count(t.datetimeindex_id) as trips_per_hour
+from time_convert t
+group by t.pickup_hour
+order by t.pickup_hour
+    );
+  
+[0m23:56:28.308654 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:3a233d33-5096-445f-80f4-d0e580c3668d&page=queryresults
+[0m23:56:30.683751 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (execute): 23:56:27.472617 => 23:56:30.683445
+[0m23:56:30.685376 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c7dde1c7-5f08-4ce6-a3c3-34a40df8e8ce', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce302fbb90>]}
+[0m23:56:30.686556 [info ] [Thread-1 (]: 10 of 10 OK created sql table model taxi_data.report_trip_perhr ................ [[32mCREATE TABLE (24.0 rows, 2.3 MiB processed)[0m in 3.23s]
+[0m23:56:30.688153 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_trip_perhr
+[0m23:56:30.691033 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:56:30.691983 [debug] [MainThread]: Connection 'model.taxi_data.report_trip_perhr' was properly closed.
+[0m23:56:30.692859 [info ] [MainThread]: 
+[0m23:56:30.694221 [info ] [MainThread]: Finished running 10 table models in 0 hours 0 minutes and 26.21 seconds (26.21s).
+[0m23:56:30.698172 [debug] [MainThread]: Command end result
+[0m23:56:30.727332 [info ] [MainThread]: 
+[0m23:56:30.728491 [info ] [MainThread]: [31mCompleted with 2 errors and 0 warnings:[0m
+[0m23:56:30.729497 [info ] [MainThread]: 
+[0m23:56:30.730419 [error] [MainThread]:   Database Error in model report_rev_perhr (models/report/report_rev_perhr.sql)
+  Syntax error: Expected ")" but got ";" at [38:24]
+  compiled Code at target/run/taxi_data/models/report/report_rev_perhr.sql
+[0m23:56:30.731365 [info ] [MainThread]: 
+[0m23:56:30.732290 [error] [MainThread]:   Database Error in model report_rev_pertrip (models/report/report_rev_pertrip.sql)
+  Syntax error: Expected keyword AS but got "(" at [13:27]
+  compiled Code at target/run/taxi_data/models/report/report_rev_pertrip.sql
+[0m23:56:30.733352 [info ] [MainThread]: 
+[0m23:56:30.734681 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=2 SKIP=0 TOTAL=10
+[0m23:56:30.736916 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 28.001692, "process_user_time": 3.67825, "process_kernel_time": 0.288867, "process_mem_max_rss": "161704", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m23:56:30.738095 [debug] [MainThread]: Command `dbt run` failed at 23:56:30.737899 after 28.00 seconds
+[0m23:56:30.738910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce34b53dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce346ff150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fce34cc8210>]}
+[0m23:56:30.739710 [debug] [MainThread]: Flushing usage events
+[0m23:59:27.859306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb58480490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb58789c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb58419250>]}
+
+
+============================== 23:59:27.864559 | 357b86c0-5e3c-4010-b429-60720e5b7efc ==============================
+[0m23:59:27.864559 [info ] [MainThread]: Running with dbt=1.7.7
+[0m23:59:27.866049 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'no_print': 'None', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'profiles_dir': '/usr/local/airflow/include/dbt', 'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'use_colors': 'True', 'introspect': 'True', 'partial_parse': 'True', 'log_format': 'default', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'write_json': 'True', 'static_parser': 'True', 'version_check': 'True', 'log_path': '/usr/local/airflow/include/dbt/logs', 'debug': 'False', 'printer_width': '80', 'invocation_command': 'dbt run --profiles-dir /usr/local/airflow/include/dbt', 'target_path': 'None'}
+[0m23:59:28.493234 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb563016d0>]}
+[0m23:59:28.580434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb561e3c50>]}
+[0m23:59:28.582180 [info ] [MainThread]: Registered adapter: bigquery=1.7.4
+[0m23:59:28.609113 [debug] [MainThread]: checksum: 54188551c516f4dd1c42b8d9c289f2bf49f18ae42632e2ba36a64ad29fd60da4, vars: {}, profile: , target: , version: 1.7.7
+[0m23:59:29.261908 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m23:59:29.263246 [debug] [MainThread]: Partial parsing: updated file: taxi_data://models/report/report_rev_pertrip.sql
+[0m23:59:29.264248 [debug] [MainThread]: Partial parsing: updated file: taxi_data://models/report/report_rev_perhr.sql
+[0m23:59:29.520157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb56252c90>]}
+[0m23:59:29.548700 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb1fd39d50>]}
+[0m23:59:29.550013 [info ] [MainThread]: Found 10 models, 1 source, 0 exposures, 0 metrics, 568 macros, 0 groups, 0 semantic models
+[0m23:59:29.551211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb56189b10>]}
+[0m23:59:29.554491 [info ] [MainThread]: 
+[0m23:59:29.556481 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m23:59:29.559938 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_taxi-project-412919'
+[0m23:59:29.560968 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:59:29.896998 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_taxi-project-412919, now list_taxi-project-412919_taxi_data)
+[0m23:59:29.898246 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:59:30.180508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb58773250>]}
+[0m23:59:30.181999 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:59:30.183086 [info ] [MainThread]: 
+[0m23:59:30.190270 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_datetime
+[0m23:59:30.191291 [info ] [Thread-1 (]: 1 of 10 START sql table model taxi_data.dim_datetime ........................... [RUN]
+[0m23:59:30.192543 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_taxi-project-412919_taxi_data, now model.taxi_data.dim_datetime)
+[0m23:59:30.193441 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_datetime
+[0m23:59:30.201847 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_datetime"
+[0m23:59:30.207372 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (compile): 23:59:30.194159 => 23:59:30.206894
+[0m23:59:30.208373 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_datetime
+[0m23:59:30.225975 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:30.586506 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_datetime"
+[0m23:59:30.594454 [debug] [Thread-1 (]: On model.taxi_data.dim_datetime: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_datetime"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_datetime`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_datetime table
+    select 
+        datetimeindex_id,
+        pick_datetime,
+        pick_day,
+        pick_month,
+        pick_year,
+        pick_weekday,
+        drop_datetime,
+        drop_hour,
+        drop_day,
+        drop_month,
+        drop_year,
+        drop_weekday
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:59:31.047303 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:0e550590-b57c-4c56-8ac4-4c55636d1fec&page=queryresults
+[0m23:59:33.401051 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_datetime (execute): 23:59:30.209092 => 23:59:33.400699
+[0m23:59:33.402833 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb56142550>]}
+[0m23:59:33.403987 [info ] [Thread-1 (]: 1 of 10 OK created sql table model taxi_data.dim_datetime ...................... [[32mCREATE TABLE (100.0k rows, 9.2 MiB processed)[0m in 3.21s]
+[0m23:59:33.405559 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_datetime
+[0m23:59:33.406924 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_locaiton
+[0m23:59:33.407977 [info ] [Thread-1 (]: 2 of 10 START sql table model taxi_data.dim_locaiton ........................... [RUN]
+[0m23:59:33.409410 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_datetime, now model.taxi_data.dim_locaiton)
+[0m23:59:33.410267 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_locaiton
+[0m23:59:33.414054 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_locaiton"
+[0m23:59:33.420178 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (compile): 23:59:33.410892 => 23:59:33.419566
+[0m23:59:33.421190 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_locaiton
+[0m23:59:33.424629 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:33.737133 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_locaiton"
+[0m23:59:33.743785 [debug] [Thread-1 (]: On model.taxi_data.dim_locaiton: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_locaiton"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_locaiton`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_location table
+    select 
+        locationindex_id,
+        PUlocationCode,
+        DOlocationCode
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:59:34.192673 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:174714f5-ab19-482f-a357-ad6317160bb7&page=queryresults
+[0m23:59:36.323099 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_locaiton (execute): 23:59:33.421866 => 23:59:36.322754
+[0m23:59:36.325162 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb561cfc10>]}
+[0m23:59:36.326357 [info ] [Thread-1 (]: 2 of 10 OK created sql table model taxi_data.dim_locaiton ...................... [[32mCREATE TABLE (100.0k rows, 2.3 MiB processed)[0m in 2.92s]
+[0m23:59:36.328006 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_locaiton
+[0m23:59:36.329256 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_payment_type
+[0m23:59:36.330423 [info ] [Thread-1 (]: 3 of 10 START sql table model taxi_data.dim_payment_type ....................... [RUN]
+[0m23:59:36.332008 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_locaiton, now model.taxi_data.dim_payment_type)
+[0m23:59:36.333079 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_payment_type
+[0m23:59:36.337355 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_payment_type"
+[0m23:59:36.342300 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (compile): 23:59:36.333893 => 23:59:36.341973
+[0m23:59:36.343052 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_payment_type
+[0m23:59:36.354523 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:36.662180 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_payment_type"
+[0m23:59:36.669190 [debug] [Thread-1 (]: On model.taxi_data.dim_payment_type: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_payment_type"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_payment_type`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_paymenttype table
+    select 
+        payment_typeindex_id,
+        payment_type_id,
+        payment_type_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:59:37.019447 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:2942b8e2-40e3-4f89-93a7-6a6df2b2e6ba&page=queryresults
+[0m23:59:39.362345 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_payment_type (execute): 23:59:36.343635 => 23:59:39.362022
+[0m23:59:39.364038 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb56189650>]}
+[0m23:59:39.365246 [info ] [Thread-1 (]: 3 of 10 OK created sql table model taxi_data.dim_payment_type .................. [[32mCREATE TABLE (100.0k rows, 2.7 MiB processed)[0m in 3.03s]
+[0m23:59:39.366931 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_payment_type
+[0m23:59:39.368458 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_ratecode
+[0m23:59:39.369503 [info ] [Thread-1 (]: 4 of 10 START sql table model taxi_data.dim_ratecode ........................... [RUN]
+[0m23:59:39.370985 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_payment_type, now model.taxi_data.dim_ratecode)
+[0m23:59:39.371854 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_ratecode
+[0m23:59:39.376324 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_ratecode"
+[0m23:59:39.382819 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (compile): 23:59:39.372569 => 23:59:39.382335
+[0m23:59:39.383749 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_ratecode
+[0m23:59:39.386809 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:39.691182 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_ratecode"
+[0m23:59:39.697220 [debug] [Thread-1 (]: On model.taxi_data.dim_ratecode: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_ratecode"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_ratecode`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_ratecode table
+    select 
+        ratecodeIndex_id,
+        ratecode_id,
+        ratecode_name
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:59:40.088461 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:243fcc80-ea8b-4a3a-87f9-c81c2227509d&page=queryresults
+[0m23:59:42.112713 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_ratecode (execute): 23:59:39.384361 => 23:59:42.112385
+[0m23:59:42.114334 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb56072ed0>]}
+[0m23:59:42.115468 [info ] [Thread-1 (]: 4 of 10 OK created sql table model taxi_data.dim_ratecode ...................... [[32mCREATE TABLE (100.0k rows, 2.9 MiB processed)[0m in 2.74s]
+[0m23:59:42.117111 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_ratecode
+[0m23:59:42.118292 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:59:42.119346 [info ] [Thread-1 (]: 5 of 10 START sql table model taxi_data.dim_store_and_fwd_flag ................. [RUN]
+[0m23:59:42.120959 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_ratecode, now model.taxi_data.dim_store_and_fwd_flag)
+[0m23:59:42.121855 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_store_and_fwd_flag
+[0m23:59:42.126400 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:59:42.133002 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (compile): 23:59:42.122634 => 23:59:42.132501
+[0m23:59:42.134020 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_store_and_fwd_flag
+[0m23:59:42.137201 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:42.466997 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_store_and_fwd_flag"
+[0m23:59:42.473303 [debug] [Thread-1 (]: On model.taxi_data.dim_store_and_fwd_flag: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_store_and_fwd_flag"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_store_and_fwd_flag`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_store_and_fwd_flag table
+    select 
+        store_and_fwd_flag_index_id,
+        store_and_fwd_flag_id,
+        store_and_fwd_flag_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:59:42.896182 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:548d4a38-1772-4552-8c5e-1435a636a980&page=queryresults
+[0m23:59:45.199750 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_store_and_fwd_flag (execute): 23:59:42.134699 => 23:59:45.199424
+[0m23:59:45.202088 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb55ea7150>]}
+[0m23:59:45.203253 [info ] [Thread-1 (]: 5 of 10 OK created sql table model taxi_data.dim_store_and_fwd_flag ............ [[32mCREATE TABLE (100.0k rows, 3.9 MiB processed)[0m in 3.08s]
+[0m23:59:45.205007 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_store_and_fwd_flag
+[0m23:59:45.206219 [debug] [Thread-1 (]: Began running node model.taxi_data.dim_vendor
+[0m23:59:45.207350 [info ] [Thread-1 (]: 6 of 10 START sql table model taxi_data.dim_vendor ............................. [RUN]
+[0m23:59:45.208861 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_store_and_fwd_flag, now model.taxi_data.dim_vendor)
+[0m23:59:45.209821 [debug] [Thread-1 (]: Began compiling node model.taxi_data.dim_vendor
+[0m23:59:45.214333 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.dim_vendor"
+[0m23:59:45.219595 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (compile): 23:59:45.210481 => 23:59:45.219238
+[0m23:59:45.220353 [debug] [Thread-1 (]: Began executing node model.taxi_data.dim_vendor
+[0m23:59:45.223319 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:45.550366 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.dim_vendor"
+[0m23:59:45.557172 [debug] [Thread-1 (]: On model.taxi_data.dim_vendor: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.dim_vendor"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`dim_vendor`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create dim_vendo table
+    select 
+        vendorindex_id,
+        vendor_id,
+        vendor_type
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:59:45.941136 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:fd3784e4-de2e-4776-a393-5d8304ad6cb6&page=queryresults
+[0m23:59:48.205779 [debug] [Thread-1 (]: Timing info for model.taxi_data.dim_vendor (execute): 23:59:45.220913 => 23:59:48.205501
+[0m23:59:48.207397 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb56114910>]}
+[0m23:59:48.208361 [info ] [Thread-1 (]: 6 of 10 OK created sql table model taxi_data.dim_vendor ........................ [[32mCREATE TABLE (100.0k rows, 3.3 MiB processed)[0m in 3.00s]
+[0m23:59:48.209567 [debug] [Thread-1 (]: Finished running node model.taxi_data.dim_vendor
+[0m23:59:48.210612 [debug] [Thread-1 (]: Began running node model.taxi_data.fact_trip
+[0m23:59:48.211602 [info ] [Thread-1 (]: 7 of 10 START sql table model taxi_data.fact_trip .............................. [RUN]
+[0m23:59:48.213007 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.dim_vendor, now model.taxi_data.fact_trip)
+[0m23:59:48.213908 [debug] [Thread-1 (]: Began compiling node model.taxi_data.fact_trip
+[0m23:59:48.217396 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.fact_trip"
+[0m23:59:48.222965 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (compile): 23:59:48.214472 => 23:59:48.222482
+[0m23:59:48.223948 [debug] [Thread-1 (]: Began executing node model.taxi_data.fact_trip
+[0m23:59:48.239417 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:48.583402 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.fact_trip"
+[0m23:59:48.589600 [debug] [Thread-1 (]: On model.taxi_data.fact_trip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.fact_trip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`fact_trip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      --Create fact_trip table
+    select 
+        trip_id,
+        vendorindex_id,
+        datetimeindex_id,
+        locationindex_id,
+        ratecodeindex_id,
+        payment_typeindex_id,
+        store_and_fwd_flag_index_id,
+        passenger_count,
+        trip_distance,
+        fare_amount,
+        extra,
+        mta_tax, 
+        tip_amount,
+        tolls_amount,
+        improvement_surcharge,
+        congestion_surcharge,
+        Airport_fee,
+        total_amount
+    from
+        `taxi-project-412919`.`taxi_data`.`taxi_metadata`
+    );
+  
+[0m23:59:48.942290 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:bc67456c-3beb-494c-b71b-5f160c827141&page=queryresults
+[0m23:59:51.390627 [debug] [Thread-1 (]: Timing info for model.taxi_data.fact_trip (execute): 23:59:48.224595 => 23:59:51.390280
+[0m23:59:51.392433 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb1fda6d10>]}
+[0m23:59:51.393549 [info ] [Thread-1 (]: 7 of 10 OK created sql table model taxi_data.fact_trip ......................... [[32mCREATE TABLE (100.0k rows, 13.7 MiB processed)[0m in 3.18s]
+[0m23:59:51.395188 [debug] [Thread-1 (]: Finished running node model.taxi_data.fact_trip
+[0m23:59:51.397622 [debug] [Thread-1 (]: Began running node model.taxi_data.report_rev_perhr
+[0m23:59:51.398613 [info ] [Thread-1 (]: 8 of 10 START sql table model taxi_data.report_rev_perhr ....................... [RUN]
+[0m23:59:51.400166 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.fact_trip, now model.taxi_data.report_rev_perhr)
+[0m23:59:51.401327 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_rev_perhr
+[0m23:59:51.406620 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_rev_perhr"
+[0m23:59:51.411768 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_perhr (compile): 23:59:51.402216 => 23:59:51.411457
+[0m23:59:51.412630 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_rev_perhr
+[0m23:59:51.417275 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_rev_perhr"
+[0m23:59:51.423413 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:51.427527 [debug] [Thread-1 (]: On model.taxi_data.report_rev_perhr: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_rev_perhr"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_rev_perhr`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with time_convert as (
+    select 
+        d.datetimeindex_id,
+        cast(d.pick_datetime as timestamp) as pickup_timestamp,
+        cast(d.drop_datetime as timestamp) as dropoff_timestamp,
+        -- Extract the hour from the pickup timestamp
+        extract(hour from cast(d.pick_datetime as timestamp)) as pickup_hour
+    from `taxi-project-412919`.`taxi_data`.`dim_datetime` d
+    join `taxi-project-412919`.`taxi_data`.`fact_trip` f 
+        on d.datetimeindex_id = f.datetimeindex_id
+),
+fact_trip_cte as (
+    select  
+        extract(hour from t.pickup_timestamp) as pickup_hour,
+        count(ft.trip_id) as total_trip,
+        sum(ft.total_amount) as total_revenue
+    from time_convert t
+    join  `taxi-project-412919`.`taxi_data`.`fact_trip` ft
+    on t.datetimeindex_id = ft.datetimeindex_id
+    group by pickup_hour
+)
+select 
+    fc.pickup_hour,
+    case when fc.total_trip > 0 then fc.total_revenue / fc.total_trip else 0 end as revenue_per_hour
+from fact_trip_cte fc
+order by fc.pickup_hour
+    );
+  
+[0m23:59:52.032560 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:deb788d1-11e5-4697-a4ab-a49a63489ade&page=queryresults
+[0m23:59:54.463297 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_perhr (execute): 23:59:51.413292 => 23:59:54.462963
+[0m23:59:54.464899 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb56209950>]}
+[0m23:59:54.466005 [info ] [Thread-1 (]: 8 of 10 OK created sql table model taxi_data.report_rev_perhr .................. [[32mCREATE TABLE (24.0 rows, 3.8 MiB processed)[0m in 3.07s]
+[0m23:59:54.467629 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_rev_perhr
+[0m23:59:54.468731 [debug] [Thread-1 (]: Began running node model.taxi_data.report_rev_pertrip
+[0m23:59:54.469694 [info ] [Thread-1 (]: 9 of 10 START sql table model taxi_data.report_rev_pertrip ..................... [RUN]
+[0m23:59:54.471220 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.report_rev_perhr, now model.taxi_data.report_rev_pertrip)
+[0m23:59:54.472126 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_rev_pertrip
+[0m23:59:54.476133 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_rev_pertrip"
+[0m23:59:54.482447 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_pertrip (compile): 23:59:54.472820 => 23:59:54.481822
+[0m23:59:54.483884 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_rev_pertrip
+[0m23:59:54.487919 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_rev_pertrip"
+[0m23:59:54.492760 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:54.496179 [debug] [Thread-1 (]: On model.taxi_data.report_rev_pertrip: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_rev_pertrip"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_rev_pertrip`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with total_fact_trip as (
+    select  
+        count(f.trip_id) as total_trip,
+        sum(f.total_amount) as total_revenue
+    from `taxi-project-412919`.`taxi_data`.`fact_trip` f
+)
+
+select 
+    (t.total_revenue / nullif(t.total_trip, 0)) as revenue_per_trip
+from total_fact_trip t
+    );
+  
+[0m23:59:55.058246 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:f9e8f9f4-1e75-4083-8170-f3154cbd5ae6&page=queryresults
+[0m23:59:57.110103 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_rev_pertrip (execute): 23:59:54.484602 => 23:59:57.109621
+[0m23:59:57.111800 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb55e55550>]}
+[0m23:59:57.113041 [info ] [Thread-1 (]: 9 of 10 OK created sql table model taxi_data.report_rev_pertrip ................ [[32mCREATE TABLE (1.0 rows, 1.5 MiB processed)[0m in 2.64s]
+[0m23:59:57.115107 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_rev_pertrip
+[0m23:59:57.116310 [debug] [Thread-1 (]: Began running node model.taxi_data.report_trip_perhr
+[0m23:59:57.117400 [info ] [Thread-1 (]: 10 of 10 START sql table model taxi_data.report_trip_perhr ..................... [RUN]
+[0m23:59:57.118877 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.taxi_data.report_rev_pertrip, now model.taxi_data.report_trip_perhr)
+[0m23:59:57.119815 [debug] [Thread-1 (]: Began compiling node model.taxi_data.report_trip_perhr
+[0m23:59:57.124060 [debug] [Thread-1 (]: Writing injected SQL for node "model.taxi_data.report_trip_perhr"
+[0m23:59:57.131264 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (compile): 23:59:57.120565 => 23:59:57.130724
+[0m23:59:57.132321 [debug] [Thread-1 (]: Began executing node model.taxi_data.report_trip_perhr
+[0m23:59:57.135975 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:59:57.468555 [debug] [Thread-1 (]: Writing runtime sql for node "model.taxi_data.report_trip_perhr"
+[0m23:59:57.474917 [debug] [Thread-1 (]: On model.taxi_data.report_trip_perhr: /* {"app": "dbt", "dbt_version": "1.7.7", "profile_name": "taxi_data", "target_name": "dev", "node_id": "model.taxi_data.report_trip_perhr"} */
+
+  
+    
+
+    create or replace table `taxi-project-412919`.`taxi_data`.`report_trip_perhr`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      with time_convert as (
+    select 
+        d.datetimeindex_id,
+        cast(d.pick_datetime as timestamp) as pickup_timestamp,
+        cast(d.drop_datetime as timestamp) as dropoff_timestamp,
+        -- Extract the hour from the pickup timestamp
+        extract(hour from cast(d.pick_datetime as timestamp)) as pickup_hour
+    from `taxi-project-412919`.`taxi_data`.`dim_datetime` d
+    join `taxi-project-412919`.`taxi_data`.`fact_trip` f 
+        on d.datetimeindex_id = f.datetimeindex_id
+)
+
+select
+    t.pickup_hour,
+    count(t.datetimeindex_id) as trips_per_hour
+from time_convert t
+group by t.pickup_hour
+order by t.pickup_hour
+    );
+  
+[0m23:59:58.108523 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=taxi-project-412919&j=bq:US:212b6a77-1308-4f7a-8616-1c80044ec7ed&page=queryresults
+[0m00:00:00.185739 [debug] [Thread-1 (]: Timing info for model.taxi_data.report_trip_perhr (execute): 23:59:57.133007 => 00:00:00.185386
+[0m00:00:00.187464 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '357b86c0-5e3c-4010-b429-60720e5b7efc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb1fd97650>]}
+[0m00:00:00.188837 [info ] [Thread-1 (]: 10 of 10 OK created sql table model taxi_data.report_trip_perhr ................ [[32mCREATE TABLE (24.0 rows, 2.3 MiB processed)[0m in 3.07s]
+[0m00:00:00.190318 [debug] [Thread-1 (]: Finished running node model.taxi_data.report_trip_perhr
+[0m00:00:00.193821 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:00:00.194743 [debug] [MainThread]: Connection 'model.taxi_data.report_trip_perhr' was properly closed.
+[0m00:00:00.195787 [info ] [MainThread]: 
+[0m00:00:00.196824 [info ] [MainThread]: Finished running 10 table models in 0 hours 0 minutes and 30.64 seconds (30.64s).
+[0m00:00:00.200163 [debug] [MainThread]: Command end result
+[0m00:00:00.233250 [info ] [MainThread]: 
+[0m00:00:00.234558 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:00:00.235703 [info ] [MainThread]: 
+[0m00:00:00.237256 [info ] [MainThread]: Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+[0m00:00:00.239361 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 32.427483, "process_user_time": 3.940617, "process_kernel_time": 0.250675, "process_mem_max_rss": "161368", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m00:00:00.240486 [debug] [MainThread]: Command `dbt run` succeeded at 00:00:00.240293 after 32.43 seconds
+[0m00:00:00.241405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb58132d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb58132010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb584067d0>]}
+[0m00:00:00.242311 [debug] [MainThread]: Flushing usage events

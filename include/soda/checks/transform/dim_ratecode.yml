@@ -1,0 +1,11 @@
+checks for dim_ratecode:
+  - schema:
+      fail:
+        when required column missing:
+          - ratecodeIndex_id
+          - ratecode_id
+          - ratecode_name
+        when wrong column type:
+          ratecodeIndex_id: INT64
+          ratecode_id: INT64
+          ratecode_name: STRING
